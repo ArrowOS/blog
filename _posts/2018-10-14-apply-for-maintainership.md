@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Apply for Maintainership"
@@ -54,7 +53,7 @@ We are also looking forward in seeing more active contributors, which will open 
 > for example: z2_plus userdebug 
 * Make a commit to add your name and your device's name in the [team page of the website](https://github.com/ArrowOS/web)
 
-* Make a [devices blog post](https://github.com/ArrowOS/devices_wiki/tree/arrow/_posts) 
+* Make a [devices blog post](https://github.com/ArrowOS/devices_wiki/tree/arrow/_posts)
 > see other device posts for example and do it a similar way
 
 ***NOTE:*** *The changes you make above should be pushed to our gerrit for review. Pull requests are not accepted*
