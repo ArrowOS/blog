@@ -5,6 +5,7 @@
 # Exit if any subcommand fails.
 set -e
 
+yarn_path=$(which yarn)
 echo "Started deploying"
 
 # Checkout gh-pages branch.
@@ -15,7 +16,7 @@ fi
 git checkout -b gh-pages
 
 # Build site.
-yarn install --modules-folder ./_assets/yarn
+$yarn_path install --modules-folder ./_assets/yarn
 bundle exec jekyll build
 
 # Delete and move files.
@@ -30,7 +31,7 @@ git push -f -q gerrit HEAD:refs/heads/gh-pages
 
 # Move back to previous branch.
 git checkout -
-yarn install --modules-folder ./_assets/yarn
+$yarn_path install --modules-folder ./_assets/yarn
 
 echo "Deployed Successfully!"
 

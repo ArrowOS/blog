@@ -5,6 +5,7 @@
 
 # Exit if any subcommand fails
 set -e
+yarn_path=$(which yarn)
 
 # Set up Ruby dependencies via Bundler.
 gem install bundler --conservative
@@ -13,4 +14,4 @@ bundle update
 
 # Set up JS dependencies via Yarn.
 npm install -g yarn
-yarn install --modules-folder ./_assets/yarn
+$yarn_path install --modules-folder ./_assets/yarn
