@@ -2,7 +2,7 @@
 layout: post
 title: "Changelogs 9.x(PIE)"
 description: "This post is updated regularly || Last updated on: 13th June, 2019"
-thumb_image: "https://avatars3.githubusercontent.com/u/40351870?s=200&v=4"
+thumb_image: "{% asset 'logo.png' @path %}"
 tags: [arrowos, changelog, pie]
 priority: 999
 ---

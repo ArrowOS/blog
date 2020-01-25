@@ -2,7 +2,7 @@
 layout: post
 title: "Changelogs 8.x(OREO)"
 description: "This post is not updated anymore [DISCONTINUED], please refer to newer version"
-thumb_image: "https://avatars3.githubusercontent.com/u/40351870?s=200&v=4"
+thumb_image: "{% asset 'logo.png' @path %}"
 tags: [arrowos, changelog, oreo]
 priority: 995
 ---
