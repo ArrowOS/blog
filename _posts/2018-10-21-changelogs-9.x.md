@@ -2,7 +2,7 @@
 layout: post
 title: "Changelogs 9.x(PIE)"
 description: "This post is updated regularly || Last updated on: 13th June, 2019"
-thumb_image: "{% asset 'logo.png' @path %}"
+thumb_image: "https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/ArrowLogo-sky-transparent.png"
 tags: [arrowos, changelog, pie]
 priority: 999
 ---

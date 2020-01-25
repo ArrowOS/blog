@@ -2,7 +2,7 @@
 layout: post
 title: "What is ArrowOS?"
 description: "ArrowOS is an AOSP based project started with the aim of keeping things simple, clean and neat. We added just the right and mostly used stuff that will be actually USEFUL at the end of the day, aiming to deliver smooth performance with better battery life"
-thumb_image: "{% asset 'logo.png' @path %}"
+thumb_image: "https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/ArrowLogo-sky-transparent.png"
 priority: 1000
 tags: [arrowos, android, features]
 ---

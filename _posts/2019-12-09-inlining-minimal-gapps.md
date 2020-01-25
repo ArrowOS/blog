@@ -2,7 +2,7 @@
 layout: post
 title: "Information regarding the inclusion of Minimal Google Apps (Services, Play Store etc) into the official builds!"
 description: "All about inlining GApps into official builds."
-thumb_image: "{% asset 'logo.png' @path %}"
+thumb_image: "https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/ArrowLogo-sky-transparent.png"
 priority: 1001
 tags: [arrowos, android, news, gapps]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "Where are the features?"
 description: "This is a pathmap to all the features available in the rom"
-thumb_image: "{% asset 'logo.png' @path %}"
+thumb_image: "https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/ArrowLogo-sky-transparent.png"
 tags: [arrowos, android, features]
 priority: 998
 ---
