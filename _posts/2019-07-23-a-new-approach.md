@@ -2,7 +2,7 @@
 layout: post
 title: "A new approach, how-to and benefits to the contributors and welcoming a new face to the CORE!"
 description: "All about the projects new strategy and focus."
-thumb_image: "{% asset 'logo.png' @path %}"
+thumb_image: "https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/ArrowLogo-sky-transparent.png"
 priority: 1001
 tags: [arrowos, android, news]
 ---

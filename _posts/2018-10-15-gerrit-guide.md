@@ -2,7 +2,7 @@
 layout: post
 title: "How to submit patches to ArrowOS Gerrit"
 description: "This guide helps you on how to start contributing to the project"
-thumb_image: "{% asset 'logo.png' @path %}"
+thumb_image: "https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/ArrowLogo-sky-transparent.png"
 tags: [arrowos, android, gerrit]
 priority: 996
 ---

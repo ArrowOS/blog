@@ -2,7 +2,7 @@
 layout: post
 title: "How to compile ArrowOS from source"
 description: "guide on how to compile rom from source"
-thumb_image: "{% asset 'logo.png' @path %}"
+thumb_image: "https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/ArrowLogo-sky-transparent.png"
 tags: [arrowos, guide]
 priority: 997
 ---

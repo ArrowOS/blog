@@ -2,7 +2,7 @@
 layout: post
 title: "Apply for Maintainership"
 description: "This form here mentions the requirements and guidelines to be a maintainer"
-thumb_image: "{% asset 'logo.png' @path %}"
+thumb_image: "https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/ArrowLogo-sky-transparent.png"
 tags: [arrowos, android, maintainership]
 priority: 995
 ---
