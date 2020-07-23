@@ -20,7 +20,9 @@ With that being said the maintainers will now be given few privileges, handing t
 We are also looking forward in seeing more active contributors, which will open the opportunity for them to become a part of Core Team. Our doors are now wide open for all contributors. The criteria to get into ArrowOS Squad will be judged upon how useful and error-free those contributions are to the project keeping in mind maintaining code integrity and ownerships to those commits respectively.
 
 ### The END - Welcoming a new member into the Core Team Squad!
-Lucia (lyudmila_rev1917) has earned a place in ArrowOS Squad being active in helping the community and on the project with several useful contributions since a long time now and hence we have decided to make her a part of ArrowOS Core Team along with +2 Gerrit rights and full control over Jenkins builds. Lucia will also be involved in several core team activities.
+~~Lucia (lyudmila_rev1917) has earned a place in ArrowOS Squad being active in helping the community and on the project with several useful contributions since a long time now and hence we have decided to make her a part of ArrowOS Core Team along with +2 Gerrit rights and full control over Jenkins builds. Lucia will also be involved in several core team activities.~~
+
+**Reason:** She retired from android (temporarily? who knows..)
 
 With Regards, <br>
 ~ Team ArrowOS
