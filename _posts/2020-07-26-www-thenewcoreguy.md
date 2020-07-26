@@ -33,7 +33,7 @@ Not to forget, [Harsh V23](https://twitter.com/harshv23) is working on improving
 
 #### A Bear in the house <br>
 
-Many of you might already be familiar of [Michael Palaych](https://github.com/palaych) as a maintainer of ArrowOS(Polaris). Since then he has been working hard and made his way up to be a member of the CORE team. There has never been an official announcement regarding this. So today as I am writing this blog post, I would like to inform everyone that <b>Palaych</b> has earned a spot into the CORE TEAM. i.e, he has now been given access to all our infra which includes Jenkins administration and full Gerrit rights. Palaych is now going to be an integral part in team decisions for the future of the project. So, let us congratulate him while we all are busy dealing with the pandemic tucked in our beds working/studying(Taking those annoying online classes) from home. 
+Many of you might already be familiar of [Michael P (palaych)](https://github.com/palaych) as a maintainer of ArrowOS (polaris). Since then he has been working hard and made his way up to be a member of the CORE team. There has never been an official announcement regarding this. So today as I am writing this blog post, I would like to inform everyone that <b>Palaych</b> has earned a spot into the CORE TEAM. i.e, he has now been given access to all our infra which includes Jenkins administration and full Gerrit rights. Palaych is now going to be an integral part in team decisions for the future of the project. So, let us congratulate him while we all are busy dealing with the pandemic tucked in our beds working/studying(Taking those annoying online classes) from home. 
 Gooj job, Pal.
 
 #### Stay home, Stay safe!
