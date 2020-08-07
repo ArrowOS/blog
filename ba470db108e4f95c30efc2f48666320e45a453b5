@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "b59ce4cd_ca5af602",
+        "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-08-07T20:58:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c5f4a6c0_d427e745",
+      "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "12575ead_9a3e9b01",
         "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
         "patchSetId": 1
@@ -33,6 +51,24 @@
       "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a876ed60_b5c2f5f2",
+        "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-08-07T20:58:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "12575ead_9a3e9b01",
+      "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": false
     },
     {
       "key": {
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "219fffc6_abc4692a",
+        "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-08-07T20:58:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c2f25402_ce58cbbc",
+      "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "08eb2d12_3c3f37ca",
         "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
         "patchSetId": 1
@@ -67,6 +121,24 @@
       "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "308105ad_f6a17bb2",
+        "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-08-07T20:58:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "08eb2d12_3c3f37ca",
+      "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": false
     },
     {
       "key": {
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "6b3d103a_58b0a102",
+        "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-08-07T20:58:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e8fe6352_80d4845f",
+      "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0b3eeca6_137daa65",
         "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
         "patchSetId": 1
@@ -104,6 +194,24 @@
     },
     {
       "key": {
+        "uuid": "bbc8ee14_9a21673f",
+        "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-08-07T20:58:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0b3eeca6_137daa65",
+      "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8074e971_7731dadf",
         "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
         "patchSetId": 1
@@ -118,6 +226,24 @@
       "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "504ab94f_b68afbbb",
+        "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-08-07T20:58:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8074e971_7731dadf",
+      "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": false
     }
   ]
 }
