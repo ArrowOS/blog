@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c5f4a6c0_d427e745",
+        "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-08-07T20:40:05Z",
+      "side": 1,
+      "message": "services -\u003e Google Play services\nNow -\u003e So, as you know we have 2 build types:",
+      "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "12575ead_9a3e9b01",
+        "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-08-07T20:40:05Z",
+      "side": 1,
+      "message": "Secondly, I will inform you about GApps build type and the recent changes that will reflect on them from next weekly*",
+      "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c2f25402_ce58cbbc",
+        "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-08-07T20:40:05Z",
+      "side": 1,
+      "message": "You may ask: what are the new changes and now what does it include?",
+      "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "08eb2d12_3c3f37ca",
+        "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-08-07T20:40:05Z",
+      "side": 1,
+      "message": "These are now shipped with GApps build:",
+      "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e8fe6352_80d4845f",
+        "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-08-07T20:40:05Z",
+      "side": 1,
+      "message": "more Google Apps?* \nYou can install* them yourself",
+      "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0b3eeca6_137daa65",
+        "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-08-07T20:40:05Z",
+      "side": 1,
+      "message": "Want to become official*",
+      "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8074e971_7731dadf",
+        "filename": "_posts/2020-08-08-about-gapps-vanilla-build.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-08-07T20:40:05Z",
+      "side": 1,
+      "message": "Looking to download latest update? We have now revamped our downloads page to be more dynamic, check this it out yourself: link",
+      "revId": "ba470db108e4f95c30efc2f48666320e45a453b5",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196",
+      "unresolved": true
+    }
+  ]
+}
