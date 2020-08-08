@@ -1,12 +1,15 @@
 ---
 layout: post
-title: "Where are the features?"
+title: "Where are the features in arrow-9.x?"
 description: "This is a pathmap to all the features available in the rom"
 thumb_image: "https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/ArrowLogo-sky-transparent.png"
 tags: [arrowos, android, features]
 priority: 998
 ---
 Published Oct 15, 2018 by **Ganesh Varma**<br>
+Updated on: Aug 08, 2020 by Kuber Sharma<br>
+
+<b>This blog post is only covers the features of arrow-9.x based on android 9.0 - PIE</b><br>
 
 Most of the common features can be found under the **Settings->Display** section.
 ##### Features under Display section:
