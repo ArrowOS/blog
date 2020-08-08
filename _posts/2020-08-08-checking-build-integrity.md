@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HOW-TO: Checking Build Integrity of our Official builds"
-description: "We explain how to you can check build Integrity of our builds."
+description: "We explain how you can check build Integrity of our builds."
 thumb_image: "https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/ArrowLogo-sky-transparent.png"
 priority: 1001
 tags: [arrowos, android, news, integrity]
@@ -21,7 +21,7 @@ Published on: Aug 08, 2020 by  Kuber Sharma<br>
 }
 </style>
 
-<span class="Dropcap">H</span>ere is how you can get sha256 of the latest ArrowOS build that you downloaded and match it with the sha256 we are displaying on our [downloads page](https://arrowos.net/downloads.php)
+<span class="Dropcap">H</span>ere is how you can get sha256 of the latest ArrowOS build that you downloaded and match it with the sha256 we are displaying on our [downloads page](https://arrowos.net/download.php)
 
 ###### Windows
 
@@ -40,7 +40,7 @@ sha256sum Arrow-*.zip
 
 <b>NOTE:</b> "Arrow-*.zip" is the build that you have downloaded.
 
-You can get see the sha256 of official builds [here](https://arrowos.net/downloads.php) - Remember to select your device and lookout for your preferred the build type i.e VANILLA or GApps
+You can get see the sha256 of official builds [here](https://arrowos.net/download.php) - Remember to select your device and lookout for your preferred the build type i.e VANILLA or GApps
 
 
 ###### Write to us about your thoughts at <arrowos.contact@gmail.com> and in the comments section below. <br>
