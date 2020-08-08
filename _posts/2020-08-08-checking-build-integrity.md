@@ -29,14 +29,14 @@ Published on: Aug 08, 2020 by  Kuber Sharma<br>
 Get-filehash Arrow-*.zip
 {% endhighlight %}
 
-<center><img src="_assets/images/sha256-linux.PNG"></center>
+<center><img src="https://raw.githubusercontent.com/ArrowOS/blog/arrow/_assets/images/sha256-win10.PNG">Windows 10 - Powershell</center>
 
 ###### Linux
 {% highlight bash %}
 sha256sum Arrow-*.zip
 {% endhighlight %}
 
-<center><img src="_assets/images/sha256-linux.PNG"></center>
+<center><img src="https://raw.githubusercontent.com/ArrowOS/blog/arrow/_assets/images/sha256-linux.PNG">Ubuntu 20.04 LTS</center>
 
 <b>NOTE:</b> "Arrow-*.zip" is the build that you have downloaded.
 
