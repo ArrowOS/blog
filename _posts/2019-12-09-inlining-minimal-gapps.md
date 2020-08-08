@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Information regarding the inclusion of Minimal Google Apps (Services, Play Store etc) into the official builds!"
+title: "Information regarding the inclusion of Minimal  GApps (Services, Play Store etc) into the official builds!"
 description: "All about inlining GApps into official builds."
 thumb_image: "https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/ArrowLogo-sky-transparent.png"
 priority: 1001
@@ -22,7 +22,7 @@ Updated on: Dec 16, 2019 by Ganesh Varma, Regarding non-gapps version conclusion
 }
 </style>
 
-<span class="Dropcap">W</span>ith some recent internal discussions regarding GApps packages the team has come to a conclusion of maintaining it's own fork of GApps which will be shipped in with the official builds. This being very minimal doesn't have any drastic increase in the zip size and overall provides a fair and lite usage for accessing Google services right from your first clean boot.
+<span class="Dropcap">W</span>ith some recent internal discussions regarding GApps packages the team has come to a conclusion of maintaining it's own fork of GApps which will be shipped in with the official builds. This being very minimal doesn't have any drastic increase in the zip size and overall provides a fair and lite usage for accessing  G-Play Services right from your first clean boot.
 
 # F.A.Q <br>
 #### Q: What made you inline gapps?
