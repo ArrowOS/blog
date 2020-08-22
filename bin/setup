@@ -8,9 +8,19 @@ set -e
 
 # Set up Ruby dependencies via Bundler.
 gem install bundler --conservative
+bundle config set path './vendor/bundle'
 bundle check || bundle install
 bundle update
 
 # Set up JS dependencies via Yarn.
-npm install -g yarn
+####################
+#npm install -g yarn
+# Install yarn debian package instead
+####################
+# sudo apt remove cmdtest
+# sudo apt remove yarn
+# curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+# echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+# sudo apt-get update && sudo apt-get install yarn
+
 yarn install --modules-folder ./_assets/yarn

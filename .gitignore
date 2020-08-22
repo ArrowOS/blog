@@ -9,6 +9,8 @@ Thumbs.db
 /_assets/yarn/
 /_site/
 /.jekyll-cache/
+/.bundle/
+/vendor/bundle/
 Gemfile.lock
 package-lock.json
 yarn.lock
