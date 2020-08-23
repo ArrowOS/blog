@@ -8,6 +8,7 @@ tags: [arrowos, android, news, gapps]
 ---
 
 Published on: Aug 08, 2020 by Michael P, Kuber Sharma<br>
+Updated on: Aug 24, 2020 by Michael P, Added Chrome Browser<br>
 
 <style type="text/css" media="Screen">
  .Dropcap {
@@ -42,6 +43,7 @@ Below are the GApps that will be shipped and will override AOSP alternatives in 
 * Device Personalization Services with Live Caption and etc.
 * Keyboard
 * Android System WebView
+* Chrome
 
 All similar <b>AOSP apps have been overwritten with GApps</b>. You don't have to delete or freeze them manually.
 
