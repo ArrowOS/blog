@@ -8,7 +8,7 @@ priority: 996
 ---
 
 Published July 28, 2018 by **Bauuuuu, Kuber Sharma**<br>
-Last updated on: **13th September,2018**
+Last updated on: **9th September, 2020** by **Kuber Sharma**
 
 ##### STEP 1:
   - Sign up on our gerrit [review.arrowos.net](https://review.arrowos.net) using either a google account or github account and set a **USERNAME** in profile section.<br>
@@ -38,31 +38,45 @@ rm -rf ~/.ssh
 
 Once you have verified your SSH keys and a successful connection with gerrit, you're ready to submit patches.
 
-##### Below is an example showing how to submit a commit to **android_vendor_arrow** repo on ArrowOS gerrit:
-This example commit shows you how to add a device to official list.
+##### Below is an example showing how to submit a commit to **arrow_infrastructure_devices** repo on ArrowOS gerrit:
+This example commit shows you how to add a device to official list or community devices list.
 
+**If you have arrow source synced:**
 From the root of your source:
 {% highlight bash %}
-cd vendor/arrow/
+cd arrow/infrastructure/devices
+{% endhighlight %}
+**OR**
+{% highlight bash %}
+git clone https://github.com/ArrowOS/arrow_infrastructure_devices arrow/infrastructure/devices
+cd arrow/infrastructure/devices
 {% endhighlight %}
 
-Now make your changes, i.e. here we edit the **arrow.devices** file to add the device codename and build type.<br>
+Now make your changes, i.e. here we edit the **arrow.devices** OR **arrow-community.devices** file to add the device codename and build type.<br>
 Once you have finished doing the changes
 {% highlight bash %}
 git add .
-git commit -m "vendor: added xyz device to official"
+git commit -m "devices: Add xyz device"
 {% endhighlight %}
 This will generate a commit with the changes you have made.
 
 ##### Now to push the changes:
 {% highlight bash %}
-git push ssh://USERNAME@review.arrowos.net:29418/ArrowOS/android_vendor_arrow HEAD:refs/for/arrow-8.x
+git push ssh://USERNAME@review.arrowos.net:29418/ArrowOS/android_vendor_arrow HEAD:refs/for/arrow-10.0
 {% endhighlight %}
-Here **android_vendor_arrow** is the repository name and arrow-8.x is the branch, change them accordingly to the repo and branch you're trying to push to.<br>
+Here **arrow_infrastructure_devices** is the repository name and arrow-10.0 is the branch, change them accordingly to the repo and branch you're trying to push to.<br>
 
-If you receive a message saying missing change id in the commit then read the error message carefully and do the exact step shown in the hint of the error message and push again.
+If you receive a message saying **missing change id in the commit** then read the error message carefully and do the exact step shown in the hint of the error message and push again or copy paste the below line.
 
-With that your commit should be visible on ArrowOS gerrit for review.<br>
+from the root of the repository folder
+{% highlight bash %}
+curl -Lo .git/hooks/commit-msg http://review.arrowos.net/tools/hooks/commit-msg
+
+chmod u+x .git/hooks/commit-msg
+{% endhighlight %}
+
+
+With that your commit should be visible on [ArrowOS gerrit](review.arrowos.net) for review.<br>
 If you still have issues please contact anyone from the ArrowOS team.<br>
 <br>
 Last but not the least, it is important that port **29418** on your network should be open else you will receive an error saying "no route to host".
