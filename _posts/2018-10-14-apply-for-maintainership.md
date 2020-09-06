@@ -33,11 +33,14 @@ by Kuber Sharma, Ganesh Varma
 #### Be sure to include:
 
   - Your name.
-  - Github, Telegram and XDA username.
+  - Github, Telegram and XDA username(optional only if you have.).
   - Link to device tree, kernel source and vendor sourc.
   - Device name, codename.
   - Selinux status, what is working or non-working, any other information team should know.
   - Attach two screenshots, one of About section in Settings of the ROM and the other of terminal on build complete.
+
+**OPTIONAL:**
+If you do not wish to apply for official devices but have made personal builds and want to share it with others or want to rarely maintain your device you can push your device to our community devices, read more about community builds [here](https://blog.arrowos.net/posts/community-builds-stay-tuned)
 
 We can take sometime to get back to you so please be patient
 ### Benefits
