@@ -25,8 +25,8 @@ Last updated on: **9th September, 2020** by **Kuber Sharma**
 {% highlight bash %}
 mkdir arrow
 cd arrow
-repo init -u https://github.com/ArrowOS/android_manifest.git -b arrow-10.0
-repo sync --force-sync --no-clone-bundle -j$(nproc --all)
+repo init -u https://github.com/ArrowOS/android_manifest.git -b arrow-11.0
+repo sync
 {% endhighlight %}
 
 
@@ -170,9 +170,10 @@ inside your device tree: /overlay/frameworks/base/core/res/res/values/config.xml
 From the root of your source directory run the following commands
 {% highlight bash %}
 . build/envsetup.sh
-lunch arrow_<devicecodename>
-mka bacon
+lunch arrow_devicecodename-buildtype
+m otapackage OR m bacon
 {% endhighlight %}
+
 
 If the device is good for daily use, you can submit it to our [Community Devices](https://blog.arrowos.net/posts/community-builds-stay-tuned) and use our [infrastructure](https://blog.arrowos.net/posts/infra-jenkins-configs-platform) to benefit many other users for the same device, or if you have gained some knowledge, have some time to dedicate and pass the certain criteria to continously support the  device as an Official device and join the team you can [submit an application](https://blog.arrowos.net/posts/apply-for-maintainership)
 
