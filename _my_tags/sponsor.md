@@ -1,0 +1,4 @@
+---
+slug: sponsor
+name: Sponsor
+---
