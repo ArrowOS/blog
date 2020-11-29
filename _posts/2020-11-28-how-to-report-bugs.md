@@ -56,8 +56,8 @@ Example:
         * **Tip:**
             * You can upload logs as an attachment in gitlab issues or upload to websites like hastebin.com etc
                 * Here are some articles to help you with capturing logcats in android:
-                            1. [https://developer.android.com/studio/command-line/logcat](https://developer.android.com/studio/command-line/logcat)
-                            2. [https://www.xda-developers.com/how-to-take-logs-in-android/](https://www.xda-developers.com/how-to-take-logs-in-android/)
+                    [https://developer.android.com/studio/command-line/logcat](https://developer.android.com/studio/command-line/logcat) 
+                    [https://www.xda-developers.com/how-to-take-logs-in-android/](https://www.xda-developers.com/how-to-take-logs-in-android/)
             * You MUST provide proper steps to reproduce that bug, glitch or whatever issue you are facing, please dont report your OCD's as bugs
             * Always mention things like:
                 * **ArrowOS Version:** arrow-10.0; arrow-11.0; arrow-12.0 etc
