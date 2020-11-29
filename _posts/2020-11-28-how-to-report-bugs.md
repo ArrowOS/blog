@@ -48,26 +48,30 @@ Check if someone has already reported that bug before you create a new issue, in
 
 Please, report bugs in the similar manner as mentioned below:
 
-* **ArrowOS android platform**
+#####  **ArrowOS android platform**
 Example:
-    * "I am facing a bug in arrow-11.0 community VANILLA edition on my Elgoog Pixel XL. Camera is not working since last update. I uploaded the logcat here www.something.com/camera-logs.txt"
-    * "WiFi is not working on my OnePlus One, I use OFFICIAL arrow-11.0 GAPPS build. I have captured a logcat while trying to open WiFi and have upload it to www.somethingd.com/opo-cyberwifi-10-12-2077.log"
 
-        * **Tip:**
-            * You can upload logs as an attachment in gitlab issues or upload to websites like hastebin.com etc
-                * Here are some articles to help you with capturing logcats in android:
-                            1. [https://developer.android.com/studio/command-line/logcat](https://developer.android.com/studio/command-line/logcat)
-                            2. [https://www.xda-developers.com/how-to-take-logs-in-android/](https://www.xda-developers.com/how-to-take-logs-in-android/)
-            * You MUST provide proper steps to reproduce that bug, glitch or whatever issue you are facing, please dont report your OCD's as bugs
-            * Always mention things like:
-                * **ArrowOS Version:** arrow-10.0; arrow-11.0; arrow-12.0 etc
-                * **ArrowOS Build Type:** OFFICIAL; COMMUNITY; UNOFFICIAL
-                * **ArrowOS Build Variant:** VANILLA; GAPPS
+* "I am facing a bug in arrow-11.0 community VANILLA edition on my Elgoog Pixel XL. Camera is not working since last update. I uploaded the logcat here www.example.com/camera-logs.txt"
+* "WiFi is not working on my OnePlus One, I use OFFICIAL arrow-11.0 GAPPS build. I have captured a logcat while trying to open WiFi and have upload it to www.example.com/opo-cyberwifi-10-12-2077.log"
 
-* **ArrowOS Infra**
+**Tips:**
+
+1. You can upload logs as an attachment in gitlab issues or upload to websites like hastebin.com etc
+
+2. Here are some articles to help you with capturing logcats in android:
+    1. [https://developer.android.com/studio/command-line/logcat](https://developer.android.com/studio/command-line/logcat) 
+    2. [https://www.xda-developers.com/how-to-take-logs-in-android/](https://www.xda-developers.com/how-to-take-logs-in-android/)
+
+3. You MUST provide proper steps to reproduce that bug, glitch or whatever issue you are facing, please dont report your OCD's as bugs
+4. Always mention things like:
+    1. **ArrowOS Version:** arrow-10.0; arrow-11.0; arrow-12.0 etc
+    2. **ArrowOS Build Type:** OFFICIAL; COMMUNITY; UNOFFICIAL
+    3. **ArrowOS Build Variant:** VANILLA; GAPPS
+
+##### ArrowOS Infra
 Example:
-    * "Official supported device list just vanished on ArrowOS website, I cannot download anything"
-    * "ArrowOS gerrit is not opening since an hour, I want to push some of my changes to it"
+* "Official supported device list just vanished on ArrowOS website, I cannot download anything"
+* "ArrowOS gerrit is not opening since an hour, I want to push some of my changes to it"
 
 ***
 Please properly mention all the details you can gather, capture logcats for android bug reports after reproducing it. If you do not mention the details or if logcats are not provided such reports will be DIRECTLY ignored. Make sure all requirements are correctly fulfilled, incomplete or one sentence reporting of bugs will be ignored. Once you report the bug, please allow some time for maintainers/deveopers to look at it, dont be imaptient and expect the bugs fixed in next update. Critical bugs will be fixed on top prioriity compared to other so please be PATIENT. Last but not the least, please DO NOT SPAM the telegram chat with bugs and feature requests.
