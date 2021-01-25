@@ -1,20 +1,90 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>ArrowOS</title>
+    <description></description>
+    <link>https://blog.arrowos.net</link>
+    <atom:link href="https://blog.arrowos.net/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Misconceptions regarding nightlies!</title>
+        <description>Clearying the misconception about nightlies</description>
+        <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+        <link>https://blog.arrowos.net/posts/nightlies-misconception</link>
+        <guid isPermaLink="true">https://blog.arrowos.net/posts/nightlies-misconception</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>HOW-TO report a bug</title>
+        <description>Reporting a bug in our ArrowOS android platform or in our Infra</description>
+        <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
+        <link>https://blog.arrowos.net/posts/how-to-report-bugs</link>
+        <guid isPermaLink="true">https://blog.arrowos.net/posts/how-to-report-bugs</guid>
+      </item>
+    
+      <item>
+        <title>Wassup!</title>
+        <description>The talk of the past, present and future</description>
+        <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
+        <link>https://blog.arrowos.net/posts/wassup</link>
+        <guid isPermaLink="true">https://blog.arrowos.net/posts/wassup</guid>
+      </item>
+    
+      <item>
+        <title>Introducing community builds</title>
+        <description>New community builds providing ArrowOS for even more devices</description>
+        <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
+        <link>https://blog.arrowos.net/posts/community-builds-stay-tuned</link>
+        <guid isPermaLink="true">https://blog.arrowos.net/posts/community-builds-stay-tuned</guid>
+      </item>
+    
+      <item>
+        <title>ArrowOS configs platform guide</title>
+        <description>A basic guide on how to use configs platform for our internal contributors.</description>
+        <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
+        <link>https://blog.arrowos.net/posts/infra-jenkins-configs-platform</link>
+        <guid isPermaLink="true">https://blog.arrowos.net/posts/infra-jenkins-configs-platform</guid>
+      </item>
+    
+      <item>
+        <title>Briefing about our Infra, Team and internal configs platform</title>
+        <description>How our infra and management evolved overtime</description>
+        <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
+        <link>https://blog.arrowos.net/posts/infra-team-configs-briefing</link>
+        <guid isPermaLink="true">https://blog.arrowos.net/posts/infra-team-configs-briefing</guid>
+      </item>
+    
+      <item>
+        <title>HOW-TO: Checking Build Integrity of our Official builds</title>
+        <description>We explain how you can check build Integrity of our builds.</description>
+        <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
+        <link>https://blog.arrowos.net/posts/checking-build-integrity</link>
+        <guid isPermaLink="true">https://blog.arrowos.net/posts/checking-build-integrity</guid>
+      </item>
+    
+      <item>
+        <title>Detailed Information about our GApps and VANILLA build types; Recent changes on GApps builds</title>
+        <description>All info about our official gapps builds</description>
+        <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
+        <link>https://blog.arrowos.net/posts/about-gapps-vanilla-build</link>
+        <guid isPermaLink="true">https://blog.arrowos.net/posts/about-gapps-vanilla-build</guid>
+      </item>
+    
+      <item>
+        <title>Our World Wide Web - the changes done and upcoming; Welcoming a new CORE member!</title>
+        <description>Recents statistics page, upcoming changes to website and a new CORE team member</description>
+        <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
+        <link>https://blog.arrowos.net/posts/www-thenewcoreguy</link>
+        <guid isPermaLink="true">https://blog.arrowos.net/posts/www-thenewcoreguy</guid>
+      </item>
+    
+      <item>
+        <title>Information regarding the inclusion of Minimal  GApps (Services, Play Store etc) into the official builds!</title>
+        <description>All about inlining GApps into official builds.</description>
+        <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
+        <link>https://blog.arrowos.net/posts/inlining-minimal-gapps</link>
+        <guid isPermaLink="true">https://blog.arrowos.net/posts/inlining-minimal-gapps</guid>
+      </item>
+    
   </channel>
 </rss>

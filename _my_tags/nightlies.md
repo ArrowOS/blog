@@ -1,4 +1,0 @@
----
-slug: nightlies
-name: Nightlies
----

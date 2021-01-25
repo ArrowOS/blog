@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>ArrowOS | Page not found</title>
-  <meta name="description" content="Page not found">
+  <title>ArrowOS | How to compile ArrowOS from source</title>
+  <meta name="description" content="guide on how to compile rom from source">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="Page not found">
+  <meta property="og:title" content="How to compile ArrowOS from source">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://blog.arrowos.net/404.html">
-  <meta property="og:description" content="Page not found">
+  <meta property="og:url" content="https://blog.arrowos.net/posts/compilation-guide">
+  <meta property="og:description" content="guide on how to compile rom from source">
   <meta property="og:site_name" content="ArrowOS">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="https://blog.arrowos.net/404.html">
-  <meta name="twitter:title" content="Page not found">
-  <meta name="twitter:description" content="Page not found">
+  <meta name="twitter:url" content="https://blog.arrowos.net/posts/compilation-guide">
+  <meta name="twitter:title" content="How to compile ArrowOS from source">
+  <meta name="twitter:description" content="guide on how to compile rom from source">
 
   <!-- cookies consent -->
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
@@ -37,8 +37,10 @@
   </script>
 
   
-    <meta property="og:image" content="https://blog.arrowos.net/assets/og-image-fa8f45852e2a73a9727533bbb95b4c18b85bcc3c68ec0c464451544a7645bcad.png">
-    <meta name="twitter:image" content="https://blog.arrowos.net/assets/og-image-fa8f45852e2a73a9727533bbb95b4c18b85bcc3c68ec0c464451544a7645bcad.png">
+    
+      <meta property="og:image" content="https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/ArrowLogo-sky-transparent.png">
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/ArrowLogo-sky-transparent.png">
+    
   
 
   <link href="https://blog.arrowos.net/feed.xml" type="application/rss+xml" rel="alternate" title="ArrowOS Last 10 blog posts" />
@@ -117,19 +119,222 @@
   </ul>
 </nav>
 
-        <script data-ad-client="ca-pub-5568741006164863" async
+        <article class="article scrollappear">
+          <header class="article-header">
+            <h1>How to compile ArrowOS from source</h1>
+            <p>guide on how to compile rom from source</p>
+            <div class="article-list-footer">
+              <span class="article-list-date">
+                October 14, 2018
+              </span>
+              <span class="article-list-divider">-</span>
+              <span class="article-list-minutes">
+                
+                
+                  4 minute read
+                
+              </span>
+              <span class="article-list-divider">-</span>
+              <div class="article-list-tags">
+                
+                  <a href="/tag/arrowos">arrowos</a>
+                
+                  <a href="/tag/guide">guide</a>
+                
+              </div>
+            </div>
+          </header>
+
+          <div class="article-content">
+            <script data-ad-client="ca-pub-5568741006164863" async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <div class="notfound-wrapper">
-  <div class="notfound-content">
-    <p>
-      Looks like you got lost.
-      <br>
-      Let's get you back to the <a href="/">homepage</a>!
-    </p>
-  </div>
-</div>
-        <script data-ad-client="ca-pub-5568741006164863" async
+            <p>Published <strong>July 12, 2018</strong> by <strong>Kuber Sharma, Bauuuuuu, Ganesh Varma</strong>
+Last updated on: <strong>9th September, 2020</strong> by <strong>Kuber Sharma</strong></p>
+
+<center><img src="https://media0.giphy.com/media/3aGZA6WLI9Jde/giphy.gif" /></center>
+
+<p><strong>So before we begin do checkout the below guides!</strong></p>
+
+<p><a href="https://source.android.com/setup/build/initializing">Establishing a Build Environment</a><br />
+<a href="https://source.android.com/setup/develop/repo">Repo command reference</a><br />
+<a href="https://source.android.com/setup/">The Android Source Code &amp; its structure</a><br /></p>
+
+<p><strong><em>Lets Begin</em></strong></p>
+<center><img src="https://media3.giphy.com/media/Axqr1hNEmGJiw/giphy.gif" /></center>
+
+<h5 id="initialize-your-local-repository--sync"><strong>Initialize your local repository &amp; Sync:</strong></h5>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mkdir </span>arrow
+<span class="nb">cd </span>arrow
+repo init <span class="nt">-u</span> https://github.com/ArrowOS/android_manifest.git <span class="nt">-b</span> arrow-11.0
+repo <span class="nb">sync</span></code></pre></figure>
+
+<p><strong>To maintain the quality of device sources we recommend using device Tree, device-common, kernel source, vendor from LineageOS/TheMuppets ORG thus this guide will be based on how to compile Arrow OS after adapting LineageOS Device sources to our platform</strong></p>
+
+<h5 id="adapting-tree-to-compile-arrowos"><strong>Adapting Tree to compile ArrowOS:</strong></h5>
+
+<p><strong>lineage_device-codename.mk -&gt; arrow_device-codename.mk</strong></p>
+
+<h5 id="now-inside-arrow_devicemk"><strong>Now inside arrow_device.mk:</strong></h5>
+<ul>
+  <li>Change <strong>“lineage” to “arrow” &amp; /”common_full_phone.mk” to “common.mk”</strong><br /> 
+for e.g: $(call inherit-product, vendor/arrow/config/common.mk)</li>
+  <li>Change PRODUCT_NAME value <strong>“lineage_device-codename”<br />
+for e.g: ( “lineage_beryllium” ) to arrow_device-codename ( i.e, arrow_beryllium )</strong></li>
+</ul>
+
+<h5 id="dependencies"><strong>Dependencies:</strong></h5>
+<p>Rename “<em>lineage.dependencies</em>” to “<em>arrow.dependencies</em>”. Add all your device dependencies in here (mainly common device repo, kernel repo, vendor repo or if any other like toolchain etc)</p>
+
+<p><strong>Note:</strong> The dependencies file is to be only placed in device repo that follows the following naming structure <strong>android_device_«manufacturer»_«codename»</strong> as the roomservice tool will only be looking into it.</p>
+
+<p><strong>Here is a sample of the dependencies file</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">[</span>
+<span class="o">{</span>
+<span class="s2">"repository"</span>: <span class="s2">"android_vendor_zuk_z2_plus"</span>,
+<span class="s2">"target_path"</span>: <span class="s2">"vendor/zuk"</span>
+<span class="o">}</span>,
+<span class="o">{</span>
+<span class="s2">"repository"</span>: <span class="s2">"android_device_zuk_msm8996-common"</span>,
+<span class="s2">"target_path"</span>: <span class="s2">"device/zuk/msm8996-common"</span>
+<span class="o">}</span>,
+<span class="o">{</span>
+<span class="s2">"repository"</span>: <span class="s2">"android_kernel_zuk_msm8996"</span>,
+<span class="s2">"target_path"</span>: <span class="s2">"kernel/zuk/msm8996"</span>
+<span class="o">}</span>
+<span class="o">]</span></code></pre></figure>
+
+<h5 id="removing-stuff-related-to-lineage-sdk-etc"><strong>Removing stuff related to Lineage SDK etc:</strong></h5>
+<p>It is necessary to clean up any specific files from LineageOS as these features depend on Los SDK which won’t be available on AOSP and results in build failures.
+<strong>eg:</strong> <strong><em>LiveDisplay, LineageParts, LineageOverlays, Lineage touch HAL etc.</em></strong></p>
+
+<p>From the root of your device tree/Common device tree remove the following folders/files:</p>
+<ul>
+  <li>lineagehw</li>
+  <li>livedisplay</li>
+  <li>touch</li>
+</ul>
+
+<p>Simillarly from <strong>BoardConfig.mk/BoardConfigCommon.mk</strong>:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Lineage Hardware</span>
+BOARD_HARDWARE_CLASS +<span class="o">=</span> <span class="se">\</span>
+<span class="si">$(</span>VENDOR_PATH<span class="si">)</span>/lineagehw</code></pre></figure>
+
+<p>From <strong>manifest.xml</strong> remove livedisplay HAL:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">    &lt;hal <span class="nv">format</span><span class="o">=</span><span class="s2">"hidl"</span><span class="o">&gt;</span>
+        &lt;name&gt;vendor.lineage.livedisplay&lt;/name&gt;
+        &lt;transport&gt;hwbinder&lt;/transport&gt;
+        &lt;version&gt;1.0&lt;/version&gt;
+        &lt;interface&gt;
+            &lt;name&gt;IColor&lt;/name&gt;
+            &lt;instance&gt;default&lt;/instance&gt;
+        &lt;/interface&gt;
+    &lt;/hal&gt;
+    &lt;hal <span class="nv">format</span><span class="o">=</span><span class="s2">"hidl"</span><span class="o">&gt;</span>
+        &lt;name&gt;vendor.lineage.touch&lt;/name&gt;
+        &lt;transport&gt;hwbinder&lt;/transport&gt;
+        &lt;version&gt;1.0&lt;/version&gt;
+        &lt;interface&gt;
+            &lt;name&gt;ITouchscreenGesture&lt;/name&gt;
+            &lt;instance&gt;default&lt;/instance&gt;
+        &lt;/interface&gt;
+    &lt;/hal&gt;
+    &lt;hal <span class="nv">format</span><span class="o">=</span><span class="s2">"hidl"</span><span class="o">&gt;</span>
+        &lt;name&gt;vendor.lineage.trust&lt;/name&gt;
+        &lt;transport&gt;hwbinder&lt;/transport&gt;
+        &lt;version&gt;1.0&lt;/version&gt;
+        &lt;interface&gt;
+            &lt;name&gt;IUsbRestrict&lt;/name&gt;
+            &lt;instance&gt;default&lt;/instance&gt;
+        &lt;/interface&gt;
+    &lt;/hal&gt;</code></pre></figure>
+
+<p>From <strong>device.mk</strong>(also named as your SOC codename like: <strong>msm8996.mk</strong>) OR <strong>common.mk</strong> incase of common trees:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">DEVICE_PACKAGE_OVERLAYS +<span class="o">=</span> <span class="si">$(</span>LOCAL_PATH<span class="si">)</span>/overlay-lineage
+
+<span class="c"># LiveDisplay native</span>
+PRODUCT_PACKAGES +<span class="o">=</span> <span class="se">\</span>
+    vendor.lineage.livedisplay<span class="k">*</span>
+
+<span class="c"># Touch</span>
+PRODUCT_PACKAGES +<span class="o">=</span> <span class="se">\</span>
+    vendor.lineage.touch<span class="k">*</span>
+
+<span class="c"># Trust HAL</span>
+PRODUCT_PACKAGES +<span class="o">=</span> <span class="se">\</span>
+    vendor.lineage.trust<span class="k">*</span></code></pre></figure>
+
+<p><strong>Note:</strong> There is possiblity that some custom packages such as doze etc may have dependency on lineageSDK, it is necessary to fix them to avoid complie errors.</p>
+
+<p>For e.g: From <strong>parts/AndroidManifest.xml</strong> OR <strong>doze/AndroidManifest.xml</strong> in your device/common device source:
+Remove the below line:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">            &lt;intent-filter&gt;
+                &lt;action android:name<span class="o">=</span><span class="s2">"org.lineageos.settings.device.DOZE_SETTINGS"</span> /&gt;
+                &lt;category android:name<span class="o">=</span><span class="s2">"android.intent.category.DEFAULT"</span> /&gt;
+            &lt;/intent-filter&gt;</code></pre></figure>
+
+<p>And set an overlay in <strong>overlay/packages/apps/Settings/res/values/config.xml</strong> inside your device/common device tree</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">    &lt;<span class="o">!</span><span class="nt">--</span> Device specific doze package <span class="nt">--</span><span class="o">&gt;</span>
+    &lt;string <span class="nv">name</span><span class="o">=</span><span class="s2">"config_customDozePackage"</span><span class="o">&gt;</span>org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity&lt;/string&gt;</code></pre></figure>
+
+<p><strong>NOTE:</strong> Package name has to match to whatever your devices uses!</p>
+
+<p><strong>Additional sets for a device with FOD:</strong>
+Lineage devices with FOD uses a feature permission XML to advertise that that device uses FOD feature</p>
+
+<p>If you closely look at the <strong>device.mk/common.mk etc</strong>, you may find this:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"> <span class="c"># Permissions</span>
+PRODUCT_COPY_FILES +<span class="o">=</span> <span class="se">\</span>
+    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:<span class="si">$(</span>TARGET_COPY_OUT_SYSTEM<span class="si">)</span>/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml</code></pre></figure>
+
+<p>This will cause a build error, so remove it.
+As of arrow-10.0, you can implement FOD in case your device supports it by setting an overlay
+inside your device tree: /overlay/frameworks/base/core/res/res/values/config.xml</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">    &lt;<span class="o">!</span><span class="nt">--</span> Shows the required view <span class="k">for in</span><span class="nt">-display</span> fingerprint <span class="nt">--</span><span class="o">&gt;</span>
+    &lt;bool <span class="nv">name</span><span class="o">=</span><span class="s2">"config_supportsInDisplayFingerprint"</span><span class="o">&gt;</span><span class="nb">true</span>&lt;/bool&gt;</code></pre></figure>
+
+<h5 id="to-start-the-rom-compilation"><strong>To start the rom compilation:</strong></h5>
+<p>From the root of your source directory run the following commands</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">.</span> build/envsetup.sh
+lunch arrow_devicecodename-buildtype
+m otapackage OR m bacon</code></pre></figure>
+
+<p>If the device is good for daily use, you can submit it to our <a href="https://blog.arrowos.net/posts/community-builds-stay-tuned">Community Devices</a> and use our <a href="https://blog.arrowos.net/posts/infra-jenkins-configs-platform">infrastructure</a> to benefit many other users for the same device, or if you have gained some knowledge, have some time to dedicate and pass the certain criteria to continously support the  device as an Official device and join the team you can <a href="https://blog.arrowos.net/posts/apply-for-maintainership">submit an application</a></p>
+
+<center><img src="https://media.giphy.com/media/NdTyWmj9mJgpq/giphy.gif" /></center>
+
+          </div>
+          <div class="article-share">
+            
+            
+            <a href="https://twitter.com/home?status=How+to+compile+ArrowOS+from+source%20-%20https://blog.arrowos.net/posts/compilation-guide" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6 -18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6 0.8 15 2.5 22.1 -80.5-4-151.9-42.6-199.6-101.3 -8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7C67 210.7 52 206.3 39 199c0 0.4 0 0.8 0 1.2 0 47 33.4 86.1 77.7 95 -8.1 2.2-16.7 3.4-25.5 3.4 -6.2 0-12.3-0.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3 -33.1 26-74.9 41.5-120.3 41.5 -7.8 0-15.5-0.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-0.1-8.4-0.3-12.5C462.6 146 479 129 492 109.5z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.arrowos.net/posts/compilation-guide" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64H288z"/></svg>
+            </a>
+            <a href="https://plus.google.com/share?url=https://blog.arrowos.net/posts/compilation-guide" title="Share on Google+" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 128 128"><path d="M40.7 55.9v16.1c0 0 15.6 0 22 0C59.2 82.5 53.8 88.2 40.7 88.2c-13.3 0-23.7-10.8-23.7-24.2s10.4-24.2 23.7-24.2c7.1 0 11.6 2.5 15.8 5.9 3.3-3.3 3.1-3.8 11.6-11.9 -7.2-6.6-16.8-10.6-27.4-10.6C18.2 23.3 0 41.5 0 64c0 22.5 18.2 40.7 40.7 40.7 33.6 0 41.8-29.3 39-48.8H40.7zM113.9 56.7V42.6h-10.1v14.1H89.4v10.1h14.5v14.5h10.1V66.8H128V56.7H113.9z"/></svg>
+            </a>
+          </div>
+          <script data-ad-client="ca-pub-5568741006164863" async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+          
+            <div id="disqus_thread" class="article-comments"></div>
+            <script src="https://https-blog-arrowos-net.disqus.com/embed.js" async defer></script>
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+          
+        </article>
         <footer class="footer scrollappear">
   <p>
     ArrowsOS is AOSP based, free and OpenSource Android custom firmware brought to by

@@ -1,4 +1,0 @@
----
-slug: arrowos
-name: ArrowOS
----

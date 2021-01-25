@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ArrowOS | Changelogs 9.x(PIE)</title>
+  <meta name="description" content="This post is updated regularly || Last updated on: 13th June, 2019">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Changelogs 9.x(PIE)">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://blog.arrowos.net/posts/changelogs-9-x">
+  <meta property="og:description" content="This post is updated regularly || Last updated on: 13th June, 2019">
+  <meta property="og:site_name" content="ArrowOS">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://blog.arrowos.net/posts/changelogs-9-x">
+  <meta name="twitter:title" content="Changelogs 9.x(PIE)">
+  <meta name="twitter:description" content="This post is updated regularly || Last updated on: 13th June, 2019">
+
+  <!-- cookies consent -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#252e39"
+      },
+      "button": {
+        "background": "#14a7d0"
+      }
+    },
+    "position": "top"
+  })});
+  </script>
+
+  
+    
+      <meta property="og:image" content="https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/ArrowLogo-sky-transparent.png">
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/ArrowLogo-sky-transparent.png">
+    
+  
+
+  <link href="https://blog.arrowos.net/feed.xml" type="application/rss+xml" rel="alternate" title="ArrowOS Last 10 blog posts" />
+
+  
+    <link rel="stylesheet" type="text/css" href="/assets/fonts-85dab368d056b5d66418fbfd7e55a89f34f644ee811c8218c81017204426121b.css">
+  
+
+  
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-dark-fa8f45852e2a73a9727533bbb95b4c18b85bcc3c68ec0c464451544a7645bcad.ico">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon-dark-fa8f45852e2a73a9727533bbb95b4c18b85bcc3c68ec0c464451544a7645bcad.png">
+    <link rel="stylesheet" type="text/css" href="/assets/dark-d82912011dc35903374b7c508c08dff37736e7469744030ccb0841b750adcf99.css">
+  
+</head>
+
+<body style="visibility: hidden !important;">
+  <div id="babasbmsgx" style="visibility: visible !important;">Please disable your adblock and script blockers to view
+    this page</div>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav scrollappear">
+  <a href="/" class="header-logo" title="ArrowOS"><img class="nav-logo" src="/assets/nav-logo-9db6c3e3bf0c82473cc400e763eafcef596854d3ab946ac1f6824be74185f0e3.png"/></a>
+  <ul class="header-links">
+    
+      <li>
+        <a href="/about" title="About me">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-about">
+  <use href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about" xlink:href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+      <li>
+        <a href="https://github.com/ArrowOS" rel="noreferrer noopener" target="_blank" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-github">
+  <use href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github" xlink:href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="mailto:arrowos.contact@gmail.com" title="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-email">
+  <use href="/assets/email-782473193bf750036fdb90e8daa075508a20509d01854c09f3237c144a3f0601.svg#icon-email" xlink:href="/assets/email-782473193bf750036fdb90e8daa075508a20509d01854c09f3237c144a3f0601.svg#icon-email"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+  </ul>
+</nav>
+
+        <article class="article scrollappear">
+          <header class="article-header">
+            <h1>Changelogs 9.x(PIE)</h1>
+            <p>This post is updated regularly || Last updated on: 13th June, 2019</p>
+            <div class="article-list-footer">
+              <span class="article-list-date">
+                October 21, 2018
+              </span>
+              <span class="article-list-divider">-</span>
+              <span class="article-list-minutes">
+                
+                
+                  9 minute read
+                
+              </span>
+              <span class="article-list-divider">-</span>
+              <div class="article-list-tags">
+                
+                  <a href="/tag/arrowos">arrowos</a>
+                
+                  <a href="/tag/changelog">changelog</a>
+                
+                  <a href="/tag/pie">pie</a>
+                
+              </div>
+            </div>
+          </header>
+
+          <div class="article-content">
+            <script data-ad-client="ca-pub-5568741006164863" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <h2 id="arrowos-changelogs-for-9xpie">ArrowOS Changelogs for 9.x(PIE)</h2>
+
+<p>Published on: July 28, 2018 by Kuber Sharma, Bauuuuu, Ganesh Varma, Amitava Mitra<br />
+Last updated on: 13th June, 2019</p>
+
+<h2 id="important-note">Important Note</h2>
+<p>This post is updated whenever there are any new updates!</p>
+
+<h4 id="downloads">DOWNLOADS</h4>
+<p>All the builds for official devices can be found <a href="https://sourceforge.net/projects/arrow-os/files/arrow-9.x/">here</a></p>
+
+<h4 id="community">COMMUNITY</h4>
+<p><a href="https://t.me/arrowos">Telegram Chat</a>
+<a href="https://t.me/arrow_os">Telegram Channel</a></p>
+
+<p>You can find changelogs for Arrow-8.x(Oreo) <a href="https://blog.arrowos.net/posts/changelogs-8-x">here</a></p>
+
+<h2 id="changelogs">CHANGELOGS</h2>
+
+<h3 id="12th-june-2019">12th June, 2019</h3>
+<ul>
+  <li>Merged latest Aosp tag/June security patch</li>
+  <li>Added CircularStd font</li>
+  <li>Sepolicy update</li>
+  <li>Misc fixes, updates and more(Check more in gerrit)</li>
+</ul>
+
+<h1 id="following-devices-are-dropped-due-to-inactive-maintainers">Following devices are dropped due to inactive maintainers:</h1>
+<p>cedric, platina</p>
+
+<h3 id="17th-april-2019">17th April, 2019</h3>
+
+<ul>
+  <li>Added support for Framework Boost ( for selective devices only )</li>
+  <li>Added Aggressive Battery Saver Mode</li>
+  <li>Toast related theme fixes</li>
+  <li>Added AOD tile (specific devices only)</li>
+  <li>Some Phonograph Music player fixes</li>
+  <li>Added Deep Sleep info in System uptime</li>
+  <li>Fixed no service and emergency calls only placement</li>
+  <li>Added support for .opus file extension</li>
+  <li>Reduce some unnecessary logspam</li>
+  <li>Fix EmergencyDialer showing in recents</li>
+  <li>Media/Ringtone gesture toasts now get themed with system theme (Dark/White)</li>
+  <li>Fonts: Add Roboto Condensed and SanFrancisco Pro</li>
+  <li>Other: bug fixes, improvements / minor updates  etc can be seen in gerrit ( review.arrowos.net )</li>
+</ul>
+
+<h3 id="26th-mar-2019">26th Mar, 2019</h3>
+<ul>
+  <li>Ambient music ticker AoD: make it compatibile with double tap sensor</li>
+  <li>Ambient music ticker: play nice with omni weather</li>
+  <li>Ambient Display Music Ticker: Nuke song count info</li>
+  <li>Ambient Music Ticker: make it pixel like</li>
+  <li>Fix lockscreen double tap to open notifications after ambient music</li>
+  <li>Screen off to skip track: Add Spotify/KDEConn/etc.</li>
+  <li>Snap: Fix picture size preference</li>
+  <li>Ambient display music ticker</li>
+  <li>Turn on display if Doze On Charge is Enabled</li>
+  <li>dynamic arrow indicators for statusbar network traffic</li>
+  <li>expandable volume panel</li>
+  <li>TrafficSB: Hide arrows in statusbar traffic indicators</li>
+  <li>Added font service</li>
+  <li>invictrix fonts &amp; statix fonts (Settings-&gt;Display-&gt;Font)</li>
+  <li>Added 3 mode disply cutout (Settings-&gt;Display-&gt;display cutout settings)</li>
+  <li>DocumentsUI: white navbar for DocumentsUI</li>
+  <li>Translations Updated</li>
+  <li>minor bugfixes and improvments (visit gerrit or github org)</li>
+</ul>
+
+<h1 id="following-devices-are-dropped-due-to-inactive-maintainers-1">Following devices are dropped due to inactive maintainers:</h1>
+<p>vince, tissot, kenzo</p>
+
+<h3 id="14th-mar-2019">14th Mar, 2019</h3>
+<ul>
+  <li>Android security patch March (r34)</li>
+  <li>OOS style network traffic indicator</li>
+  <li>Individual toggles for QS and statusbar traffic indicators</li>
+  <li>systemui: reduce padding between signal icons and battery</li>
+  <li>BatteryMeterView: Fix logcat spam</li>
+  <li>Use normal tinting for emergency icons</li>
+  <li>fix status bar mobile view layout problem</li>
+  <li>Improve performance of unclipped save layers.</li>
+  <li>Fix flickering issue when live wallpaper is showing on aod</li>
+  <li>wake from aod on unplug if we show on charging only</li>
+  <li>Dash charging: Add the battery percent back</li>
+  <li>Re-add WPS implementation</li>
+  <li>Fix summary text for advanced button</li>
+  <li>Settings: Bring back Uptime</li>
+  <li>Settings: show battery times in summary</li>
+  <li>Settings: enable SIM card ringtone only if slot not empty</li>
+  <li>replaced Simple gallery with AOSP Gallery</li>
+  <li>Automatic translation imports</li>
+  <li>Fix carrier config option not hidden on a CDMA phone</li>
+  <li>NfcNci: make T3T/Nfc-F HCE optional</li>
+  <li>Fixed tinting for emergency icons</li>
+  <li>Fixes to elliptic ultrasound devices (device specific)</li>
+  <li>removed teal color from the default printer service</li>
+  <li>Use GoogleSans on package installer app title</li>
+  <li>Updated search bar style on dark theme</li>
+  <li>DocumentsUI: Improve dark theme</li>
+  <li>DocumentsUI: Fix navbar themeing</li>
+  <li>DocumentsUI: support night mode</li>
+  <li>Translations Updated</li>
+</ul>
+
+<h1 id="new-devices-added">New devices added:</h1>
+<p>chiron(Xiaomi Mi Mix 2) - @Perfectime94
+platina(Xiaomi MI 8 Lite) - @melvingarcia</p>
+<h1 id="builds-are-available-on-sourceforge-already-ota-will-be-available-within-24hrs">Builds are available on sourceforge already, OTA will be available within 24hrs!!!</h1>
+
+<h3 id="14th-feb-2019">14th Feb, 2019</h3>
+<ul>
+  <li>Merge February Security patch(r31)</li>
+  <li>new Volte icon extracted from asus Pie beta</li>
+  <li>Fixed signature spoofing support</li>
+  <li>Hide arrows in Network Traffic indicators</li>
+  <li>Move statusbar weather to QS statusbar header</li>
+  <li>Move net monitor to expanded statusbar header</li>
+  <li>Make weather clickable in QS status bar header</li>
+  <li>Make traffic clickable in QS status bar header</li>
+  <li>Make statusbar header net monitor play nice with the QS Scrim</li>
+  <li>Clear all lingering notifications when network is disconnected</li>
+  <li>Remove unnecessary right padding from time picker</li>
+  <li>Network traffic: fix indicator not hiding on lost connection</li>
+  <li>Net monitor: fix text color on light theme</li>
+  <li>Statusbar net monitor: stop the handler if screen is off</li>
+  <li>SystemUI: Ambient Display: fixed overlap of  weather and notifications</li>
+  <li>Fix disappearing home/recents button</li>
+  <li>Translations Updated</li>
+  <li>Updated qcom hals</li>
+  <li>optimisations, core changes and fixes which is not mentioned here but can be seen at Github Org or Gerrit</li>
+</ul>
+
+<p>New Devices : Motorola One Power (chef), Smartron srt (rimo02a), Motorola G5 (cedric)
+Dropped Devices: Xiaomi Mi A1 (tissot)</p>
+<h1 id="builds-are-available-on-sourceforge-already-ota-will-be-available-within-24hrs-1">Builds are available on sourceforge already, OTA will be available within 24hrs!!!</h1>
+
+<h3 id="28th-january-2019">28th January, 2019</h3>
+<ul>
+  <li>Fixed weather not getting updated</li>
+  <li>Keyguard weather styles, option to display weather and conditions in one line</li>
+  <li>Removed Yahoo weather provider</li>
+  <li>Option to add Custom API key for OpenWeatherMap</li>
+  <li>Added Navigation Bar QS Tile toggle</li>
+  <li>Moved out buttons and navbar option to dashboard</li>
+  <li>Fixed signature spoofing (microG)</li>
+  <li>FMradio: fixed crash when adding radio station to favorites</li>
+  <li>Display Dash charging for dash charge in battery settings(oneplus devices)</li>
+  <li>Fix mediascanner access permissions to external storage</li>
+  <li>Make keyguard weather icon smaller</li>
+  <li>Hide check button when using PIN quick unlock</li>
+  <li>Auto face unlock v2 for pie</li>
+  <li>Unconditional led notifications for dialer and many other apps</li>
+  <li>Translation update for several apps</li>
+</ul>
+
+<h3 id="12th-january-2019">12th January, 2019</h3>
+<ul>
+  <li>Merged android-9.0.0_r30 tag (Jan security patches)</li>
+  <li>Fix unlinked ringtone and notification volumes panels</li>
+  <li>Make installer header look a little better</li>
+  <li>Show a more descriptive message when vendor.img is out of date</li>
+  <li>Snap camera updates and fixes</li>
+  <li>Only show bluetooth icon when connected &amp; enabled</li>
+  <li>Don’t crash if there is IR HAL is not declared</li>
+  <li>Packages like Camera2, Email, UnifiedMail, Exchange are updated,</li>
+  <li>Volume slider related fixes</li>
+  <li>Some layout changes in Sound Settings</li>
+  <li>Fixed Settings force close when searching for second time,</li>
+  <li>Fixed a crash for bad package name,</li>
+  <li>Translations</li>
+  <li>several of optimizations, core changes and fixes</li>
+</ul>
+
+<h3 id="8th-december-2018">8th December, 2018</h3>
+<p>From last few weeks team discussions we’re bringing in few changes to our weeklies startegy.The weeklies now will be moved to bi-weeklies. Which means there will be update after the android security bulletin starting each month and the second update will be within next 10-14 days of first update. Overall two updates per month. We are at this stage that the changes to source are not very dynamic as compared to early PIE release days, rather pretty stable. This is to give us and the maintainers more firm control over the changes being introduced and enough time to test them out for a more refined and stable update to our users. Having written that, the critical updates related with specific device will be released as and when required. Moreover, from our stats we are noticing that few devices still have huge userbase on ArrOW Oreo and hence for these devices we will provide the Oreo updates with latest securrity patch merged and misc fixes.</p>
+
+<p>Android Security patch Level : 5 Dec 2018</p>
+<ul>
+  <li>Option to unlink ringtone and notification sound</li>
+  <li>Keymaster updates</li>
+  <li>Fix high battery drain after using flashlight</li>
+  <li>DownloadProvider: allow more redirects</li>
+  <li>DownloadProvider: ability to pause/resume downloads</li>
+  <li>Prevent crash when multiple Screenshot request is made</li>
+  <li>LatinIME: Fix dicttool build</li>
+  <li>Latin IME bug with deleted text will reappear after screen orientation changes</li>
+  <li>Fixing layouts and adding 5th row to QWERTZ</li>
+  <li>LatinIME: Fix to English dictionary can be added after deleting</li>
+  <li>Add 5th number row to keyboard.</li>
+  <li>Launcher: Add back button to Settings</li>
+  <li>Launcher: Move package icon to the end if the preference</li>
+  <li>Translations</li>
+  <li>Rremoved Turbo</li>
+  <li>device related fixes, kernel upstream</li>
+</ul>
+
+<h3 id="1st-december-2018">1st December, 2018</h3>
+<ul>
+  <li>Updated DeskClock, also added support of power off alarm feature (Device dependent).</li>
+  <li>Changed default animation scales to x0.8.</li>
+  <li>Optimisations for faster animation speeds.</li>
+  <li>Animation scale can be tweaked using a seekbar.</li>
+  <li>Added a toast when screenshot is deleted</li>
+  <li>Prevent crash when multiple Screenshot request is made</li>
+  <li>Expose screenshot flash colors for themes</li>
+  <li>Fixed too big spacing between QS icons in landscape on sw600dp</li>
+  <li>Import updated APNs from Google.</li>
+  <li>Fixed: removed duplicate alarm sounds.</li>
+  <li>Updated translations.</li>
+  <li>Added Reboot and Recovery QS tile.</li>
+  <li>Added Night Light brightness mode options.</li>
+  <li>Fixed: DnD tile long-press.</li>
+  <li>Quickstep: added Rounded square icon shape.</li>
+  <li>Quickstep: App Apps search bar has rounded corners.</li>
+  <li>Removed: QS panel Opacity</li>
+  <li>Fixed screen saver FC due to missing flag</li>
+  <li>touch response optimizations</li>
+  <li>Other changes: core optimisations, device side changes. More info can be seen on gerrit.</li>
+</ul>
+
+<h3 id="25th-november-2018">25th November, 2018</h3>
+
+<ul>
+  <li>Add new feature of One-hand UI Mode</li>
+  <li>Statusbar battery level device filter: add a few more ones</li>
+  <li>SystemUI: Show bluetooth battery level when available</li>
+  <li>Automatic translation import</li>
+  <li>fwb: Implement alternative device key handler</li>
+  <li>base: add settings for device features</li>
+  <li>BurnInProtection: Fix null object reference with timer</li>
+  <li>Do not move the multi-window divider when showing IME</li>
+  <li>Fix StatusBar icons tinting when in split screen</li>
+  <li>Framework: Remove some methods from boot image profile</li>
+  <li>SystemUI: Fix mCallbacks is not thread-safe</li>
+  <li>Synchronize mPermissions to void NullPointerException</li>
+  <li>Remove NotificationVisibility storage pool</li>
+  <li>Keyguard: Remove carrier text for disabled SIMs</li>
+  <li>SignalClusterView: Hide signal icons for disabled SIMs</li>
+  <li>Refusing to enter PIP mode when activity destroyed</li>
+  <li>Fix PIP media session listener for secondary users</li>
+  <li>Fix the behavior of keyguard bouncer in a corner case</li>
+  <li>SystemUI: Fixes context for tiles without longClick</li>
+  <li>ActivityManager: Fix display id JE issue</li>
+  <li>am: Fix top activity resume with secure keyguard</li>
+  <li>Delay blanking of displays to improve performance</li>
+  <li>Fix intermittent slowness in resolver activity towards end of day</li>
+  <li>Other changes: core optimisations, device side changes. More info can be seen on gerrit</li>
+</ul>
+
+<h3 id="18th-november-2018">18th November, 2018</h3>
+<ul>
+  <li>Add Custom Icon Pack support</li>
+  <li>Swipe down gesture support on Launcher</li>
+  <li>Configurable App title lables in drawer and homescreen</li>
+  <li>Add support for ringtones per sim</li>
+  <li>Translations by community merged</li>
+  <li>Messaging app updates, pixel color default</li>
+  <li>Long touch on  QS Title will show detailed view</li>
+  <li>Fixed QS Tiles title visibility</li>
+  <li>Qcom HAL upates</li>
+  <li>VoLTE icon from OOS Pie</li>
+  <li>Other changes: optimisations, core changes, package updates etc. More info can be seen on gerrit</li>
+</ul>
+
+<h3 id="11th-november-2018">11th November, 2018</h3>
+<ul>
+  <li>November security patch r16.</li>
+  <li>Longpress power for torch on lockscreen.</li>
+  <li>Full navbar gestures (swipe left for back action).</li>
+  <li>Double tap on navbar to sleep.</li>
+  <li>Toggle to set QS brightness slider on bottom.</li>
+  <li>Toggle to completly disable brightness slider from QS panel.</li>
+  <li>Full FDE (encryption) support. (device specific)</li>
+  <li>Option to set separate ringtones for mutilple sims.</li>
+  <li>Latest translation changes.</li>
+  <li>many more upstream changes &amp; fixes.</li>
+  <li>Device related fixes and kernel upstream</li>
+</ul>
+
+<h3 id="2nd-november-2018">2nd November, 2018</h3>
+<ul>
+  <li>New Spooky Bootanimation (Halloween Special)</li>
+  <li>Spooky Halloween notification sounds (Halloween Special)</li>
+  <li>Halloween wallpaper (Halloween Special)</li>
+  <li>Themed to Halloween orange accent by default (Halloween Special)</li>
+  <li>Added spooky Halloween ringtone &amp; alarm sound by default (Halloween Special)</li>
+  <li>Added spooky SeLinux status message (Halloween Special)</li>
+  <li>Fixed battery charging indication bug</li>
+  <li>Secure QS tiles when the device is locked (requires unlocking to use quick tiles)</li>
+  <li>Added Recorder app</li>
+  <li>Themed package installer</li>
+  <li>Added all pixel &amp; pixel 2 sounds</li>
+  <li>Added Google’s new alarm sounds</li>
+  <li>Added Audio and Screen recorder</li>
+  <li>Added Google nexus audio files</li>
+  <li>Made batterysaver dark mode state configurable</li>
+  <li>Lockscreen charging indication fixed</li>
+  <li>Disabled Hungarian spell checking</li>
+  <li>Add Luxembourgish keyboard &amp; spellchecking dictionary</li>
+  <li>Fixed battery settings fc</li>
+  <li>SDClang optimizations</li>
+  <li>Enabled Smart notification reply for supported apps</li>
+  <li>Some string improvements for better user understanding</li>
+  <li>Updated Translations</li>
+  <li>And many more core optimizations &amp; fixes</li>
+</ul>
+
+<h3 id="28th-october-2018">28th October, 2018</h3>
+<ul>
+  <li>VoLTE icon</li>
+  <li>VoLTE icon enable and disable switch.(disabled by default)</li>
+  <li>Added location tile cycle modes</li>
+  <li>Added arrowos default wallpaper</li>
+  <li>Fixed night mode to work on light theme</li>
+  <li>Added hide signal icons for disabled sims</li>
+  <li>Fixed usbdevicemanager null object reference</li>
+  <li>Added screen unpinning on devices without navbar</li>
+  <li>Notification light switch hide pref on no config</li>
+  <li>Removed night mode from developers settings</li>
+  <li>Moved battery light settings into dashboard battery section</li>
+  <li>Swipetonotificationsettings: added proper check on search index</li>
+  <li>Fixed ghost toggling of night mode</li>
+  <li>Fixed NPE of battery settings</li>
+  <li>Refactored ArrowOS preference in About into Firmware dialog.</li>
+  <li>Also added info for build date, and official status of the rom.</li>
+  <li>Fuelgauge optimisations for better and accurate battery stats.</li>
+  <li>Re-arranged density, display and font size options to their own category(Desity options).</li>
+  <li>Added screenshot QS tile.</li>
+  <li>Added translations</li>
+  <li>Upstream changes</li>
+  <li>And many more core optimizations &amp; Fixes</li>
+</ul>
+
+<h3 id="21st-october-2018">21st October, 2018</h3>
+
+<ul>
+  <li>Merged tag ‘android-9.0.0_r12’</li>
+  <li>Fixed initial value of qs columns to default aosp</li>
+  <li>Added phonograph</li>
+  <li>Add NightMode under display SystemUI theme category</li>
+  <li>Added config to disable cdma call forward/waiting</li>
+  <li>Added conference uri support</li>
+  <li>Added support for implicit call rejection</li>
+  <li>Added avoid wifi to cellular silent redial when roaming</li>
+  <li>Added config to control holding a video call</li>
+  <li>Added get sim card capacity count of sms</li>
+  <li>Added allow emergency ims network request in sim less case</li>
+  <li>Updater will generate changelog url dynamically</li>
+  <li>Updated pixel colors from taimen</li>
+  <li>Added fingerprint authentication vibration</li>
+  <li>Added unlock keystore with fingerprint after reboot</li>
+  <li>Added Expanded Desktop</li>
+  <li>Fixed preferred calls sim not being disabled</li>
+  <li>And many more core optimizations &amp; fixes</li>
+</ul>
+
+<h3 id="14th-october-2018">14th October, 2018</h3>
+
+<ul>
+  <li>Added lockdown on power menu &amp; its lockscreen visibility</li>
+  <li>Power menu tracks accents now</li>
+  <li>Option to disable QS footer warnings</li>
+  <li>Autobrightness toggle on QS</li>
+  <li>updated NFC QS tile and statusbar icon</li>
+  <li>fix facelock crash when lock screen is disabled</li>
+  <li>Show Auto-BT while driving setting</li>
+  <li>Pixel navbar animation</li>
+  <li>Dual Channel into Bluetooth Audio Channel Mode</li>
+  <li>Materialize Toast notifications</li>
+  <li>batterysaver ring on circle battery icon</li>
+  <li>Camera2 fixes and improvments</li>
+  <li>Misc bug fixes &amp; improvements</li>
+  <li>Add switches to show city/temp on lockscreen</li>
+  <li>allow to swipe down on recents view to clear all default launcher</li>
+  <li>Google Feed integration on default launcher</li>
+  <li>Allow resizing any widget on default Launcher</li>
+  <li>Updated Translations (Thanks to community)</li>
+</ul>
+
+          </div>
+          <div class="article-share">
+            
+            
+            <a href="https://twitter.com/home?status=Changelogs+9.x(PIE)%20-%20https://blog.arrowos.net/posts/changelogs-9-x" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6 -18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6 0.8 15 2.5 22.1 -80.5-4-151.9-42.6-199.6-101.3 -8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7C67 210.7 52 206.3 39 199c0 0.4 0 0.8 0 1.2 0 47 33.4 86.1 77.7 95 -8.1 2.2-16.7 3.4-25.5 3.4 -6.2 0-12.3-0.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3 -33.1 26-74.9 41.5-120.3 41.5 -7.8 0-15.5-0.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-0.1-8.4-0.3-12.5C462.6 146 479 129 492 109.5z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.arrowos.net/posts/changelogs-9-x" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64H288z"/></svg>
+            </a>
+            <a href="https://plus.google.com/share?url=https://blog.arrowos.net/posts/changelogs-9-x" title="Share on Google+" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 128 128"><path d="M40.7 55.9v16.1c0 0 15.6 0 22 0C59.2 82.5 53.8 88.2 40.7 88.2c-13.3 0-23.7-10.8-23.7-24.2s10.4-24.2 23.7-24.2c7.1 0 11.6 2.5 15.8 5.9 3.3-3.3 3.1-3.8 11.6-11.9 -7.2-6.6-16.8-10.6-27.4-10.6C18.2 23.3 0 41.5 0 64c0 22.5 18.2 40.7 40.7 40.7 33.6 0 41.8-29.3 39-48.8H40.7zM113.9 56.7V42.6h-10.1v14.1H89.4v10.1h14.5v14.5h10.1V66.8H128V56.7H113.9z"/></svg>
+            </a>
+          </div>
+          <script data-ad-client="ca-pub-5568741006164863" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+          
+            <div id="disqus_thread" class="article-comments"></div>
+            <script src="https://https-blog-arrowos-net.disqus.com/embed.js" async defer></script>
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+          
+        </article>
+        <footer class="footer scrollappear">
+  <p>
+    ArrowsOS is AOSP based, free and OpenSource Android custom firmware brought to by
+    <a href="https://arrowos.net/index.html" rel="noreferrer noopener" target="_blank" title="About me">ArrowTeam</a>. Download source code <a href="https://github.com/ArrowOS/android_manifest" rel="noreferrer noopener" target="_blank" title="Download ArrowOS">here</a>.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127891468-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-127891468-1');
+</script>
+
+
+<script src="/assets/vendor-130c9c254effc51f3283620bc635851da7b99c20901216948f11ba72ee13317f.js" type="text/javascript"></script>
+
+
+
+
+<script src="/assets/scrollappear-e2da8ea567e418637e31266cc5302126eaa79f62a2273739086358b589a89ee6.js" type="text/javascript"></script>
+
+
+<script src="/assets/application-cfde13ac81ddaf4351b2e739603e2baf688d0fcc9aba613fe62bbb1c7b037fb9.js" type="text/javascript"></script>
+
+<script>
+  // Place this code snippet near the footer of your page before the close of the /body tag
+  // LEGAL NOTICE: The content of this website and all associated program code are protected under the Digital Millennium Copyright Act. Intentionally circumventing this code may constitute a violation of the DMCA.
+
+  eval(function (p, a, c, k, e, d) {
+    e = function (c) {
+      return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
+    };
+    if (!''.replace(/^/, String)) {
+      while (c--) {
+        d[e(c)] = k[c] || e(c)
+      }
+      k = [function (e) {
+        return d[e]
+      }];
+      e = function () {
+        return '\\w+'
+      };
+      c = 1
+    };
+    while (c--) {
+      if (k[c]) {
+        p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c])
+      }
+    }
+    return p
+  }(';q N=\'\',29=\'1U\';1R(q i=0;i<12;i++)N+=29.V(B.K(B.H()*29.E));q 2p=1,2B=4e,2E=4f,2D=61,2e=C(t){q i=!1,o=C(){z(k.1i){k.2L(\'2R\',e);D.2L(\'1T\',e)}O{k.2M(\'2T\',e);D.2M(\'1Z\',e)}},e=C(){z(!i&&(k.1i||4g.2r===\'1T\'||k.2O===\'2P\')){i=!0;o();t()}};z(k.2O===\'2P\'){t()}O z(k.1i){k.1i(\'2R\',e);D.1i(\'1T\',e)}O{k.2W(\'2T\',e);D.2W(\'1Z\',e);q n=!1;2V{n=D.4i==4j&&k.26}35(a){};z(n&&n.2I){(C r(){z(i)G;2V{n.2I(\'16\')}35(e){G 4d(r,50)};i=!0;o();t()})()}}};D[\'\'+N+\'\']=(C(){q t={t$:\'1U+/=\',4k:C(e){q r=\'\',d,n,i,c,s,l,o,a=0;e=t.e$(e);1e(a<e.E){d=e.14(a++);n=e.14(a++);i=e.14(a++);c=d>>2;s=(d&3)<<4|n>>4;l=(n&15)<<2|i>>6;o=i&63;z(34(n)){l=o=64}O z(34(i)){o=64};r=r+T.t$.V(c)+T.t$.V(s)+T.t$.V(l)+T.t$.V(o)};G r},13:C(e){q n=\'\',d,l,c,s,a,o,r,i=0;e=e.1s(/[^A-4m-4n-9\\+\\/\\=]/g,\'\');1e(i<e.E){s=T.t$.1L(e.V(i++));a=T.t$.1L(e.V(i++));o=T.t$.1L(e.V(i++));r=T.t$.1L(e.V(i++));d=s<<2|a>>4;l=(a&15)<<4|o>>2;c=(o&3)<<6|r;n=n+P.S(d);z(o!=64){n=n+P.S(l)};z(r!=64){n=n+P.S(c)}};n=t.n$(n);G n},e$:C(t){t=t.1s(/;/g,\';\');q n=\'\';1R(q i=0;i<t.E;i++){q e=t.14(i);z(e<1t){n+=P.S(e)}O z(e>4o&&e<4p){n+=P.S(e>>6|4q);n+=P.S(e&63|1t)}O{n+=P.S(e>>12|2G);n+=P.S(e>>6&63|1t);n+=P.S(e&63|1t)}};G n},n$:C(t){q i=\'\',e=0,n=4r=1w=0;1e(e<t.E){n=t.14(e);z(n<1t){i+=P.S(n);e++}O z(n>4l&&n<2G){1w=t.14(e+1);i+=P.S((n&31)<<6|1w&63);e+=2}O{1w=t.14(e+1);2k=t.14(e+2);i+=P.S((n&15)<<12|(1w&63)<<6|2k&63);e+=3}};G i}};q r=[\'4b==\',\'3W\',\'4a=\',\'49\',\'48\',\'47=\',\'46=\',\'45=\',\'44\',\'43\',\'42=\',\'41=\',\'40\',\'3Z\',\'3Y=\',\'3X\',\'4s=\',\'4c=\',\'4t=\',\'4L=\',\'4N=\',\'4O=\',\'4P==\',\'4Q==\',\'4R==\',\'4S==\',\'4M=\',\'4T\',\'4V\',\'4W\',\'4X\',\'4Y\',\'4Z\',\'51==\',\'4U=\',\'4K=\',\'4v=\',\'4J==\',\'3U=\',\'4H\',\'4G=\',\'4F=\',\'4E==\',\'4D=\',\'4C==\',\'4B==\',\'4A=\',\'4z=\',\'4y\',\'4x==\',\'4w==\',\'4u\',\'3V==\',\'3T=\'],p=B.K(B.H()*r.E),w=t.13(r[p]),W=w,Q=1,Y=\'#3e\',a=\'#3l\',v=\'#3n\',g=\'#3j\',L=\'\',b=\'3f!\',y=\'3i 3k 37 3m\\\'3h 3g 38 2u 2t. 3c\\\'s 3b.  3a 39\\\'t?\',f=\'3o 3d 3q-3F, 3S 3R\\\'t 3Q 3P T 3O 3N.\',s=\'I 3M, I 3L 3K 3J 2u 2t.  3I 3H 3G!\',i=0,u=0,n=\'3E.3r\',l=0,Z=e()+\'.2o\';C h(t){z(t)t=t.1Q(t.E-15);q i=k.2S(\'3D\');1R(q n=i.E;n--;){q e=P(i[n].1P);z(e)e=e.1Q(e.E-15);z(e===t)G!0};G!1};C m(t){z(t)t=t.1Q(t.E-15);q e=k.3C;x=0;1e(x<e.E){1l=e[x].1I;z(1l)1l=1l.1Q(1l.E-15);z(1l===t)G!0;x++};G!1};C e(t){q n=\'\',i=\'1U\';t=t||30;1R(q e=0;e<t;e++)n+=i.V(B.K(B.H()*i.E));G n};C o(i){q o=[\'3A\',\'3z==\',\'3y\',\'3x\',\'2K\',\'3w==\',\'3v=\',\'3u==\',\'3t=\',\'3s==\',\'52==\',\'4I==\',\'54\',\'5j\',\'6t\',\'2K\'],a=[\'36=\',\'6s==\',\'6r==\',\'6q==\',\'6p=\',\'6o\',\'6n=\',\'6m=\',\'36=\',\'6l\',\'53==\',\'6j\',\'6h==\',\'62==\',\'6g==\',\'6f=\'];x=0;1J=[];1e(x<i){c=o[B.K(B.H()*o.E)];d=a[B.K(B.H()*a.E)];c=t.13(c);d=t.13(d);q r=B.K(B.H()*2)+1;z(r==1){n=\'//\'+c+\'/\'+d}O{n=\'//\'+c+\'/\'+e(B.K(B.H()*20)+4)+\'.2o\'};1J[x]=1V 1W();1J[x].1Y=C(){q t=1;1e(t<7){t++}};1J[x].1P=n;x++}};C X(t){};G{2Y:C(t,a){z(6e k.J==\'6d\'){G};q i=\'0.1\',a=W,e=k.1c(\'1C\');e.1n=a;e.j.1j=\'1S\';e.j.16=\'-1k\';e.j.U=\'-1k\';e.j.1p=\'2a\';e.j.11=\'6c\';q d=k.J.2v,r=B.K(d.E/2);z(r>15){q n=k.1c(\'2b\');n.j.1j=\'1S\';n.j.1p=\'1y\';n.j.11=\'1y\';n.j.U=\'-1k\';n.j.16=\'-1k\';k.J.6v(n,k.J.2v[r]);n.1f(e);q o=k.1c(\'1C\');o.1n=\'2x\';o.j.1j=\'1S\';o.j.16=\'-1k\';o.j.U=\'-1k\';k.J.1f(o)}O{e.1n=\'2x\';k.J.1f(e)};l=6b(C(){z(e){t((e.27==0),i);t((e.24==0),i);t((e.1M==\'2l\'),i);t((e.1O==\'2i\'),i);t((e.1E==0),i)}O{t(!0,i)}},28)},1K:C(e,c){z((e)&&(i==0)){i=1;D[\'\'+N+\'\'].1A();D[\'\'+N+\'\'].1K=C(){G}}O{q f=t.13(\'6a\'),u=k.69(f);z((u)&&(i==0)){z((2B%3)==0){q l=\'68=\';l=t.13(l);z(h(l)){z(u.1H.1s(/\\s/g,\'\').E==0){i=1;D[\'\'+N+\'\'].1A()}}}};q p=!1;z(i==0){z((2E%3)==0){z(!D[\'\'+N+\'\'].2w){q d=[\'67==\',\'66==\',\'6u=\',\'6i=\',\'6w=\'],m=d.E,a=d[B.K(B.H()*m)],r=a;1e(a==r){r=d[B.K(B.H()*m)]};a=t.13(a);r=t.13(r);o(B.K(B.H()*2)+1);q n=1V 1W(),s=1V 1W();n.1Y=C(){o(B.K(B.H()*2)+1);s.1P=r;o(B.K(B.H()*2)+1)};s.1Y=C(){i=1;o(B.K(B.H()*3)+1);D[\'\'+N+\'\'].1A()};n.1P=a;z((2D%3)==0){n.1Z=C(){z((n.11<8)&&(n.11>0)){D[\'\'+N+\'\'].1A()}}};o(B.K(B.H()*3)+1);D[\'\'+N+\'\'].2w=!0};D[\'\'+N+\'\'].1K=C(){G}}}}},1A:C(){z(u==1){q M=2m.6E(\'2H\');z(M>0){G!0}O{2m.6B(\'2H\',(B.H()+1)*28)}};q h=\'6z==\';h=t.13(h);z(!m(h)){q c=k.1c(\'5Z\');c.23(\'5w\',\'5X\');c.23(\'2r\',\'1h/5t\');c.23(\'1I\',h);k.2S(\'5s\')[0].1f(c)};5r(l);k.J.1H=\'\';k.J.j.17+=\'R:1y !19\';k.J.j.17+=\'1u:1y !19\';q Z=k.26.24||D.2U||k.J.24,p=D.5q||k.J.27||k.26.27,r=k.1c(\'1C\'),Q=e();r.1n=Q;r.j.1j=\'2y\';r.j.16=\'0\';r.j.U=\'0\';r.j.11=Z+\'1B\';r.j.1p=p+\'1B\';r.j.2q=Y;r.j.1X=\'5p\';k.J.1f(r);q d=\'<a 1I="5o://5n.5m" j="F-1b:10.5l;F-1m:1g-1o;1a:5k;">5Y 5h 55 5g 21 5f</a>\';d=d.1s(\'5e\',e());d=d.1s(\'5d\',e());q o=k.1c(\'1C\');o.1H=d;o.j.1j=\'1S\';o.j.1z=\'1D\';o.j.16=\'1D\';o.j.11=\'5c\';o.j.1p=\'5b\';o.j.1X=\'2j\';o.j.1E=\'.6\';o.j.2n=\'2s\';o.1i(\'59\',C(){n=n.58(\'\').57().56(\'\');D.33.1I=\'//\'+n});k.1N(Q).1f(o);q i=k.1c(\'1C\'),X=e();i.1n=X;i.j.1j=\'2y\';i.j.U=p/7+\'1B\';i.j.5i=Z-5v+\'1B\';i.j.5K=p/3.5+\'1B\';i.j.2q=\'#5W\';i.j.1X=\'2j\';i.j.17+=\'F-1m: "5V 5U", 1v, 1x, 1g-1o !19\';i.j.17+=\'5T-1p: 5S !19\';i.j.17+=\'F-1b: 5R !19\';i.j.17+=\'1h-1q: 1r !19\';i.j.17+=\'1u: 5Q !19\';i.j.1M+=\'21\';i.j.32=\'1D\';i.j.5P=\'1D\';i.j.5N=\'2C\';k.J.1f(i);i.j.5M=\'1y 5J 5x -5I 5H(0,0,0,0.3)\';i.j.1O=\'2F\';q W=30,w=22,x=18,L=18;z((D.2U<2Z)||(5G.11<2Z)){i.j.2X=\'50%\';i.j.17+=\'F-1b: 5E !19\';i.j.32=\'5D;\';o.j.2X=\'65%\';q W=22,w=18,x=12,L=12};i.1H=\'<2Q j="1a:#5C;F-1b:\'+W+\'1F;1a:\'+a+\';F-1m:1v, 1x, 1g-1o;F-1G:5B;R-U:1d;R-1z:1d;1h-1q:1r;">\'+b+\'</2Q><2N j="F-1b:\'+w+\'1F;F-1G:5A;F-1m:1v, 1x, 1g-1o;1a:\'+a+\';R-U:1d;R-1z:1d;1h-1q:1r;">\'+y+\'</2N><5z j=" 1M: 21;R-U: 0.2J;R-1z: 0.2J;R-16: 2d;R-2g: 2d; 2A:5y 6k #3p; 11: 25%;1h-1q:1r;"><p j="F-1m:1v, 1x, 1g-1o;F-1G:2z;F-1b:\'+x+\'1F;1a:\'+a+\';1h-1q:1r;">\'+f+\'</p><p j="R-U:5F;"><2b 5L="T.j.1E=.9;" 5O="T.j.1E=1;"  1n="\'+e()+\'" j="2n:2s;F-1b:\'+L+\'1F;F-1m:1v, 1x, 1g-1o; F-1G:2z;2A-5u:2C;1u:1d;5a-1a:\'+v+\';1a:\'+g+\';1u-16:2a;1u-2g:2a;11:60%;R:2d;R-U:1d;R-1z:1d;" 6y="D.33.6A();">\'+s+\'</2b></p>\'}}})();D.2f=C(t,e){q n=6C.6D,i=D.6x,r=n(),o,a=C(){n()-r<e?o||i(a):t()};i(a);G{3B:C(){o=1}}};q 2h;z(k.J){k.J.j.1O=\'2F\'};2e(C(){z(k.1N(\'2c\')){k.1N(\'2c\').j.1O=\'2l\';k.1N(\'2c\').j.1M=\'2i\'};2h=D.2f(C(){D[\'\'+N+\'\'].2Y(D[\'\'+N+\'\'].1K,D[\'\'+N+\'\'].4h)},2p*28)});', 62, 413, '|||||||||||||||||||style|document||||||var|||||||||if||Math|function|window|length|font|return|random||body|floor|||DhXcLXAaYtis|else|String||margin|fromCharCode|this|top|charAt||||||width||decode|charCodeAt||left|cssText||important|color|size|createElement|10px|while|appendChild|sans|text|addEventListener|position|5000px|thisurl|family|id|serif|height|align|center|replace|128|padding|Helvetica|c2|geneva|0px|bottom|RDIPFtMguL|px|DIV|30px|opacity|pt|weight|innerHTML|href|spimg|nuBlxiPHQP|indexOf|display|getElementById|visibility|src|substr|for|absolute|load|ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789|new|Image|zIndex|onerror|onload||block||setAttribute|clientWidth||documentElement|clientHeight|1000|ggVBKaFzxG|60px|div|babasbmsgx|auto|maNOlkXbSN|QavjQShacl|right|EYPJMOOdjB|none|10000|c3|hidden|sessionStorage|cursor|jpg|iHsQxYjkeE|backgroundColor|type|pointer|blocker|ad|childNodes|ranAlready|banner_ad|fixed|300|border|UFnpOeiWek|15px|JuqlDBZXIO|hJiXsVLhYV|visible|224|babn|doScroll|5em|cGFydG5lcmFkcy55c20ueWFob28uY29t|removeEventListener|detachEvent|h1|readyState|complete|h3|DOMContentLoaded|getElementsByTagName|onreadystatechange|innerWidth|try|attachEvent|zoom|wvCjkNuhPm|640|||marginLeft|location|isNaN|catch|ZmF2aWNvbi5pY28|like|an|doesn|Who|okay|That|without|141414|Welcome|using|re|It|FFFFFF|looks|777777|you|1f83e7|But|CCC|advertising|kcolbdakcolb|cHJvbW90ZS5wYWlyLmNvbQ|Y2FzLmNsaWNrYWJpbGl0eS5jb20|YWR2ZXJ0aXNpbmcuYW9sLmNvbQ|YWdvZGEubmV0L2Jhbm5lcnM|YS5saXZlc3BvcnRtZWRpYS5ldQ|YWQuZm94bmV0d29ya3MuY29t|anVpY3lhZHMuY29t|YWQubWFpbC5ydQ|YWRuLmViYXkuY29t|clear|styleSheets|script|moc|income|in|me|Let|my|disabled|have|understand|awesome|site|making|keep|can|we|c3BvbnNvcmVkX2xpbms|YWRUZWFzZXI|b3V0YnJhaW4tcGFpZA|YWRCYW5uZXJXcmFw|QWRBcmVh|QWQ3Mjh4OTA|QWQzMDB4MjUw|QWQzMDB4MTQ1|YWQtY29udGFpbmVyLTI|YWQtY29udGFpbmVyLTE|YWQtY29udGFpbmVy|YWQtZm9vdGVy|YWQtbGI|YWQtbGFiZWw|YWQtaW5uZXI|YWQtaW1n|YWQtaGVhZGVy|YWQtZnJhbWU|YWQtbGVmdA|QWRGcmFtZTI|setTimeout|124|97|event|VEeOZfquMt|frameElement|null|encode|191|Za|z0|127|2048|192|c1|QWRGcmFtZTE|QWRGcmFtZTM|Z29vZ2xlX2Fk|QWRDb250YWluZXI|YWRzZW5zZQ|cG9wdXBhZA|YWRzbG90|YmFubmVyaWQ|YWRzZXJ2ZXI|YWRfY2hhbm5lbA|IGFkX2JveA|YmFubmVyYWQ|YWRBZA|YWRiYW5uZXI|YWRCYW5uZXI|YmFubmVyX2Fk|YWRzLnp5bmdhLmNvbQ|Z2xpbmtzd3JhcHBlcg|QWRCb3gxNjA|QWRGcmFtZTQ|RGl2QWQ|QWRMYXllcjE|QWRMYXllcjI|QWRzX2dvb2dsZV8wMQ|QWRzX2dvb2dsZV8wMg|QWRzX2dvb2dsZV8wMw|QWRzX2dvb2dsZV8wNA|RGl2QWQx|QWREaXY|RGl2QWQy|RGl2QWQz|RGl2QWRB|RGl2QWRC|RGl2QWRD||QWRJbWFnZQ|YWRzLnlhaG9vLmNvbQ|c3F1YXJlLWFkLnBuZw|YWRzYXR0LmFiY25ld3Muc3RhcndhdmUuY29t|detect|join|reverse|split|click|background|40px|160px|FILLVECTID2|FILLVECTID1|adblockers|and|to|minWidth|YWRzYXR0LmVzcG4uc3RhcndhdmUuY29t|white|5pt|com|blockadblock|http|9999|innerHeight|clearInterval|head|css|radius|120|rel|24px|1px|hr|500|200|999|45px|18pt|35px|screen|rgba|8px|14px|minHeight|onmouseover|boxShadow|borderRadius|onmouseout|marginRight|12px|16pt|normal|line|Black|Arial|fff|stylesheet|How|link|||bGFyZ2VfYmFubmVyLmdpZg||||Ly93d3cuZ3N0YXRpYy5jb20vYWR4L2RvdWJsZWNsaWNrLmljbw|Ly93d3cuZ29vZ2xlLmNvbS9hZHNlbnNlL3N0YXJ0L2ltYWdlcy9mYXZpY29uLmljbw|Ly9wYWdlYWQyLmdvb2dsZXN5bmRpY2F0aW9uLmNvbS9wYWdlYWQvanMvYWRzYnlnb29nbGUuanM|querySelector|aW5zLmFkc2J5Z29vZ2xl|setInterval|468px|undefined|typeof|YWR2ZXJ0aXNlbWVudC0zNDMyMy5qcGc|d2lkZV9za3lzY3JhcGVyLmpwZw|YmFubmVyX2FkLmdpZg|Ly9hZHMudHdpdHRlci5jb20vZmF2aWNvbi5pY28|ZmF2aWNvbjEuaWNv|solid|YWQtbGFyZ2UucG5n|Q0ROLTMzNC0xMDktMTM3eC1hZC1iYW5uZXI|YWRjbGllbnQtMDAyMTQ3LWhvc3QxLWJhbm5lci1hZC5qcGc|MTM2N19hZC1jbGllbnRJRDI0NjQuanBn|c2t5c2NyYXBlci5qcGc|NzIweDkwLmpwZw|NDY4eDYwLmpwZw|YmFubmVyLmpwZw|YXMuaW5ib3guY29t|Ly9hZHZlcnRpc2luZy55YWhvby5jb20vZmF2aWNvbi5pY28|insertBefore|Ly93d3cuZG91YmxlY2xpY2tieWdvb2dsZS5jb20vZmF2aWNvbi5pY28|requestAnimationFrame|onclick|Ly95dWkueWFob29hcGlzLmNvbS8zLjE4LjEvYnVpbGQvY3NzcmVzZXQvY3NzcmVzZXQtbWluLmNzcw|reload|setItem|Date|now|getItem'.split('|'), 0, {}));
+</script>
+</body>
+</html>

@@ -1,4 +1,0 @@
----
-slug: infra
-name: Infrastructure
----

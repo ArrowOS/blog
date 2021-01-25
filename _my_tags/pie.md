@@ -1,4 +1,0 @@
----
-slug: pie
-name: Pie
----

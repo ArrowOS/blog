@@ -1,4 +1,0 @@
----
-slug: team
-name: Team
----

@@ -1,4 +1,0 @@
----
-slug: changelog
-name: Changelog
----

@@ -1,4 +1,0 @@
----
-slug: bugs
-name: Bugs
----

@@ -1,4 +1,0 @@
----
-slug: gapps
-name: GApps
----

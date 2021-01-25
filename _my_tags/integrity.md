@@ -1,4 +1,0 @@
----
-slug: integrity
-name: integrity
----

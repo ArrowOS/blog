@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>ArrowOS | Page not found</title>
-  <meta name="description" content="Page not found">
+  <title>ArrowOS | HOW-TO report a bug</title>
+  <meta name="description" content="Reporting a bug in our ArrowOS android platform or in our Infra">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="Page not found">
+  <meta property="og:title" content="HOW-TO report a bug">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://blog.arrowos.net/404.html">
-  <meta property="og:description" content="Page not found">
+  <meta property="og:url" content="https://blog.arrowos.net/posts/how-to-report-bugs">
+  <meta property="og:description" content="Reporting a bug in our ArrowOS android platform or in our Infra">
   <meta property="og:site_name" content="ArrowOS">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="https://blog.arrowos.net/404.html">
-  <meta name="twitter:title" content="Page not found">
-  <meta name="twitter:description" content="Page not found">
+  <meta name="twitter:url" content="https://blog.arrowos.net/posts/how-to-report-bugs">
+  <meta name="twitter:title" content="HOW-TO report a bug">
+  <meta name="twitter:description" content="Reporting a bug in our ArrowOS android platform or in our Infra">
 
   <!-- cookies consent -->
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
@@ -37,8 +37,10 @@
   </script>
 
   
-    <meta property="og:image" content="https://blog.arrowos.net/assets/og-image-fa8f45852e2a73a9727533bbb95b4c18b85bcc3c68ec0c464451544a7645bcad.png">
-    <meta name="twitter:image" content="https://blog.arrowos.net/assets/og-image-fa8f45852e2a73a9727533bbb95b4c18b85bcc3c68ec0c464451544a7645bcad.png">
+    
+      <meta property="og:image" content="https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/logcatorgtfo.jpg">
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/logcatorgtfo.jpg">
+    
   
 
   <link href="https://blog.arrowos.net/feed.xml" type="application/rss+xml" rel="alternate" title="ArrowOS Last 10 blog posts" />
@@ -117,19 +119,144 @@
   </ul>
 </nav>
 
-        <script data-ad-client="ca-pub-5568741006164863" async
+        <article class="article scrollappear">
+          <header class="article-header">
+            <h1>HOW-TO report a bug</h1>
+            <p>Reporting a bug in our ArrowOS android platform or in our Infra</p>
+            <div class="article-list-footer">
+              <span class="article-list-date">
+                November 28, 2020
+              </span>
+              <span class="article-list-divider">-</span>
+              <span class="article-list-minutes">
+                
+                
+                  3 minute read
+                
+              </span>
+              <span class="article-list-divider">-</span>
+              <div class="article-list-tags">
+                
+                  <a href="/tag/arrowos">arrowos</a>
+                
+                  <a href="/tag/android">android</a>
+                
+                  <a href="/tag/news">news</a>
+                
+                  <a href="/tag/bugs">bugs</a>
+                
+              </div>
+            </div>
+          </header>
+
+          <div class="article-content">
+            <script data-ad-client="ca-pub-5568741006164863" async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <div class="notfound-wrapper">
-  <div class="notfound-content">
-    <p>
-      Looks like you got lost.
-      <br>
-      Let's get you back to the <a href="/">homepage</a>!
-    </p>
-  </div>
-</div>
-        <script data-ad-client="ca-pub-5568741006164863" async
+            <p>Published on: Nov 28, 2020 by Kuber Sharma<br /></p>
+
+<style type="text/css" media="Screen">
+ . Dropcap {
+  color: #42f5aa;
+  float: left;
+  font-size: 69px;
+  line-height: 30px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+</style>
+
+<p><span class="Dropcap">I</span>n this blog post, we will talk about on how to report bugs in our fork of AOSP platform and infrastructure for it which includes website, downloads server, statistics webpage etc.</p>
+
+<center><img src="https://raw.githubusercontent.com/ArrowOS/arrow_logos/master/logcatorgtfo.jpg" /></center>
+
+<h4 id="what-not-to-report">WHAT NOT to report.</h4>
+
+<ul>
+  <li>Bugs which are present in unofficial builds or anything that is not downloaded from our official download server,</li>
+  <li>Asking about device support, unlocking bootloader, getting TWRP installed and similar stuff,</li>
+  <li>Bugs on a device which has root privelleges from SuperSU, Magisk, Magisk Modules etc,</li>
+  <li>Isues which suggest feature requests,</li>
+  <li>Issues which suggest supporting a new device which we do not own,</li>
+  <li>Bugs which arise after replacing default apps,</li>
+  <li>Bugs which occur in third party apps,</li>
+  <li>Bugs in devices we do not support anymore</li>
+  <li>Bugs in ArrowOS experimental builds</li>
+</ul>
+
+<h4 id="where-to-report">WHERE to report.</h4>
+
+<p>We use Gitlab Issues as our bug tracker, you can report issues/bugs related to <a href="https://gitlab.com/arrowos-support/issues/infrastructure/-/issues/new">infra</a> or <a href="https://gitlab.com/arrowos-support/issues/android/-/issues/new">ArrowOS android platform</a> bugs there.</p>
+
+<h4 id="how-to-report">HOW to report.</h4>
+
+<p>Check if someone has already reported that bug before you create a new issue, incase you find there is already a bug report for it you can comment there with “+1” OR “I am also facing this” etc BE CREATIVE.</p>
+
+<p>Please, report bugs in the similar manner as mentioned below:</p>
+
+<h5 id="arrowos-android-platform"><strong>ArrowOS android platform</strong></h5>
+<p>Example:</p>
+
+<ul>
+  <li>“I am facing a bug in arrow-11.0 community VANILLA edition on my Elgoog Pixel XL. Camera is not working since last update. I uploaded the logcat here www.example.com/camera-logs.txt”</li>
+  <li>“WiFi is not working on my OnePlus One, I use OFFICIAL arrow-11.0 GAPPS build. I have captured a logcat while trying to open WiFi and have upload it to www.example.com/opo-cyberwifi-10-12-2077.log”</li>
+</ul>
+
+<p><strong>Tips:</strong></p>
+
+<ol>
+  <li>
+    <p>You can upload logs as an attachment in gitlab issues or upload to websites like hastebin.com etc</p>
+  </li>
+  <li>Here are some articles to help you with capturing logcats in android:
+    <ol>
+      <li><a href="https://developer.android.com/studio/command-line/logcat">https://developer.android.com/studio/command-line/logcat</a></li>
+      <li><a href="https://www.xda-developers.com/how-to-take-logs-in-android/">https://www.xda-developers.com/how-to-take-logs-in-android/</a></li>
+    </ol>
+  </li>
+  <li>You MUST provide proper steps to reproduce that bug, glitch or whatever issue you are facing, please dont report your OCD’s as bugs</li>
+  <li>Always mention things like:
+    <ol>
+      <li><strong>ArrowOS Version:</strong> arrow-10.0; arrow-11.0; arrow-12.0 etc</li>
+      <li><strong>ArrowOS Build Type:</strong> OFFICIAL; COMMUNITY; UNOFFICIAL</li>
+      <li><strong>ArrowOS Build Variant:</strong> VANILLA; GAPPS</li>
+    </ol>
+  </li>
+</ol>
+
+<h5 id="arrowos-infra">ArrowOS Infra</h5>
+<p>Example:</p>
+<ul>
+  <li>“Official supported device list just vanished on ArrowOS website, I cannot download anything”</li>
+  <li>“ArrowOS gerrit is not opening since an hour, I want to push some of my changes to it”</li>
+</ul>
+
+<hr />
+<p>Please properly mention all the details you can gather, capture logcats for android bug reports after reproducing it. If you do not mention the details or if logcats are not provided such reports will be DIRECTLY ignored. Make sure all requirements are correctly fulfilled, incomplete or one sentence reporting of bugs will be ignored. Once you report the bug, please allow some time for maintainers/deveopers to look at it, dont be imaptient and expect the bugs fixed in next update. Critical bugs will be fixed on top prioriity compared to other so please be PATIENT. Last but not the least, please DO NOT SPAM the telegram chat with bugs and feature requests.</p>
+
+          </div>
+          <div class="article-share">
+            
+            
+            <a href="https://twitter.com/home?status=HOW-TO+report+a+bug%20-%20https://blog.arrowos.net/posts/how-to-report-bugs" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6 -18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6 0.8 15 2.5 22.1 -80.5-4-151.9-42.6-199.6-101.3 -8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7C67 210.7 52 206.3 39 199c0 0.4 0 0.8 0 1.2 0 47 33.4 86.1 77.7 95 -8.1 2.2-16.7 3.4-25.5 3.4 -6.2 0-12.3-0.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3 -33.1 26-74.9 41.5-120.3 41.5 -7.8 0-15.5-0.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-0.1-8.4-0.3-12.5C462.6 146 479 129 492 109.5z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.arrowos.net/posts/how-to-report-bugs" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64H288z"/></svg>
+            </a>
+            <a href="https://plus.google.com/share?url=https://blog.arrowos.net/posts/how-to-report-bugs" title="Share on Google+" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 128 128"><path d="M40.7 55.9v16.1c0 0 15.6 0 22 0C59.2 82.5 53.8 88.2 40.7 88.2c-13.3 0-23.7-10.8-23.7-24.2s10.4-24.2 23.7-24.2c7.1 0 11.6 2.5 15.8 5.9 3.3-3.3 3.1-3.8 11.6-11.9 -7.2-6.6-16.8-10.6-27.4-10.6C18.2 23.3 0 41.5 0 64c0 22.5 18.2 40.7 40.7 40.7 33.6 0 41.8-29.3 39-48.8H40.7zM113.9 56.7V42.6h-10.1v14.1H89.4v10.1h14.5v14.5h10.1V66.8H128V56.7H113.9z"/></svg>
+            </a>
+          </div>
+          <script data-ad-client="ca-pub-5568741006164863" async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+          
+            <div id="disqus_thread" class="article-comments"></div>
+            <script src="https://https-blog-arrowos-net.disqus.com/embed.js" async defer></script>
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+          
+        </article>
         <footer class="footer scrollappear">
   <p>
     ArrowsOS is AOSP based, free and OpenSource Android custom firmware brought to by

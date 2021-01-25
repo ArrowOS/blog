@@ -1,4 +1,0 @@
----
-slug: maintainership
-name: Maintainership
----

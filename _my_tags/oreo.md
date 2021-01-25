@@ -1,4 +1,0 @@
----
-slug: oreo
-name: Oreo
----
